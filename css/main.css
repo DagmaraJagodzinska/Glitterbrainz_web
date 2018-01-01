@@ -1,0 +1,207 @@
+.is-blue {
+  color: #5454ff; }
+
+.main-header,
+.section-header,
+.who-we-are-list-title,
+.our-strengths {
+  font-family: "Oswald", sans-serif; }
+
+h2 {
+  font-size: 67px; }
+
+.is-bold {
+  font-weight: 700; }
+
+.btn-blue-custom {
+  background-color: #5454ff;
+  border: none;
+  border-radius: 0;
+  padding: 10px 44px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 300; }
+  .btn-blue-custom:hover {
+    background-color: #2221d3;
+    color: #fff; }
+
+body {
+  margin: 0;
+  background-color: #fff;
+  font-family: "Roboto", sans-serif; }
+
+header {
+  margin-bottom: 50px; }
+
+section {
+  margin-bottom: 50px; }
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #29d4be; }
+
+.change-color:hover {
+  animation-name: textcolor;
+  animation-duration: 1s; }
+
+@keyframes textcolor {
+  0% {
+    color: #ab22d8; }
+  50% {
+    color: #ab22d8; }
+  100% {
+    color: #29d4be; } }
+
+.navbar-default {
+  background: #fff;
+  border: none; }
+
+.nav {
+  margin: -32px -22px -25px 0; }
+  .nav .nav-item {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-right: 45px; }
+    .nav .nav-item .nav-item-link {
+      color: #5454ff;
+      letter-spacing: 0.1em; }
+
+.hello-section .container {
+  position: relative;
+  z-index: 3; }
+
+.hello-section .hello-text {
+  padding: 90px 50px 25px 25px; }
+
+.hello-section .main-header {
+  color: #5454ff;
+  text-transform: uppercase;
+  font-size: 27px; }
+
+.hello-section .main-subheader {
+  font-size: 36px;
+  font-weight: 300; }
+  .hello-section .main-subheader:after {
+    display: inline-block;
+    content: "";
+    border-top: 4px solid #5454ff;
+    width: 310px;
+    margin: -53px 77rem;
+    position: relative;
+    bottom: 40px; }
+
+.hello-section .hello-section-dots {
+  position: absolute;
+  right: 400px;
+  top: 80px; }
+
+.first-section {
+  margin-bottom: 80px; }
+
+.section-text {
+  padding-left: 80px;
+  padding-right: 25px; }
+
+.section-header {
+  text-transform: uppercase;
+  line-height: 75px;
+  font-size: 67px;
+  display: inline-block;
+  width: 300px; }
+  .section-header:after {
+    display: inline-block;
+    content: "";
+    border-top: 5px solid #f0eeee;
+    width: 284px;
+    position: relative;
+    bottom: 50px; }
+
+.section-subheader {
+  margin-top: -50px; }
+
+.first-section-img {
+  padding-left: 140px; }
+
+.second-section .stripes {
+  padding: 80px; }
+
+.our-projects {
+  background-color: #e3e3e3;
+  padding: 60px;
+  position: relative; }
+  .our-projects .container {
+    position: relative;
+    z-index: 3; }
+  .our-projects .our-projects-section-dots {
+    position: absolute;
+    right: 300px;
+    top: -113px; }
+  .our-projects .section-header {
+    display: block;
+    width: 100%; }
+    .our-projects .section-header:after {
+      display: block;
+      content: "";
+      border-top: 5px solid #fff;
+      width: 410px;
+      position: relative;
+      bottom: -8px;
+      margin: 0 auto; }
+  .our-projects .our-projects-subheader {
+    padding: 40px;
+    width: 500px;
+    margin: 0 auto; }
+
+.who-we-are .section-header {
+  display: block;
+  width: 100%;
+  padding-bottom: 70px; }
+  .who-we-are .section-header:after {
+    content: none; }
+
+.who-we-are .our-images {
+  padding-bottom: 70px; }
+  .who-we-are .our-images .image-box {
+    text-align: center; }
+
+.who-we-are .who-we-are-list-container:after {
+  display: block;
+  content: "";
+  border-top: 5px solid #f0eeee;
+  width: 304px;
+  position: relative;
+  bottom: -8px;
+  left: 23px; }
+
+.who-we-are .who-we-are-list-title {
+  text-transform: uppercase;
+  color: #5454ff;
+  font-size: 20px;
+  padding-left: 25px; }
+
+.who-we-are .who-we-are-list {
+  list-style-type: square;
+  color: #5454ff; }
+  .who-we-are .who-we-are-list span {
+    color: black; }
+
+.who-we-are .our-strengths {
+  text-transform: uppercase;
+  color: #5454ff;
+  font-size: 20px; }
+
+.who-we-are .who-we-are-subheader {
+  width: 70%; }
+  .who-we-are .who-we-are-subheader:after {
+    display: block;
+    content: "";
+    border-top: 5px solid #f0eeee;
+    width: 400px;
+    position: relative;
+    bottom: -20px;
+    left: 0; }
+
+.footer {
+  background-color: #e3e3e3;
+  padding: 30px; }
+  .footer .icons {
+    padding-left: 40px; }

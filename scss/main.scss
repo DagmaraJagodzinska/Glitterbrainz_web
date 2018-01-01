@@ -1,0 +1,318 @@
+// COLORS
+
+$white: #fff;
+$main-blue: #5454ff;
+$main-blue-hover:#2221d3;
+$second-blue: #29d4be;
+$light-grey: #f0eeee;
+$dark-grey: #e3e3e3;
+$hover-violet: #ab22d8;
+
+.is-blue {
+    color: $main-blue;
+}
+
+// TYPOGRAPHY
+
+$Roboto : 'Roboto', sans-serif;
+$Oswald : 'Oswald', sans-serif;
+
+$btn-font-size-desktop: 20px;
+$h2-desktop-font-size : 67px;
+
+.main-header,
+.section-header,
+.who-we-are-list-title ,
+.our-strengths {
+    font-family: $Oswald;
+}
+
+h2 {
+    font-size: $h2-desktop-font-size;
+}
+
+.is-bold {
+    font-weight: 700;
+}
+
+// BUTTON
+
+.btn-blue-custom {
+    background-color: $main-blue;
+    border: none;
+    border-radius: 0;
+    padding: 10px 44px;
+    font-size: $btn-font-size-desktop;
+    text-transform: uppercase;
+    font-weight: 300;
+
+    &:hover {
+        background-color: $main-blue-hover;
+        color: $white;
+    }
+}
+
+// BUTTON -- END
+
+body {
+    margin: 0;
+    background-color: $white;
+    font-family: $Roboto;
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+// NAV COLOR HOVER ANIMATION
+.navbar-default .navbar-nav>li>a:hover {
+    color: $second-blue;
+}
+
+.change-color:hover {
+    animation-name: textcolor;
+    animation-duration: 1s;
+}
+
+@keyframes textcolor {
+    0% {
+        color: $hover-violet;
+    }
+    50% {
+        color: $hover-violet;
+    }
+    100% {
+        color: $second-blue;
+        ;
+    }
+}
+
+// NAV COLOR HOVER ANIMATION -- END
+
+
+// navbar
+.navbar-default {
+    background: $white;
+    border: none;
+}
+
+.nav {
+    margin: -32px -22px -25px 0;
+    .nav-item {
+        text-decoration: none;
+        text-transform: uppercase;
+        padding-right: 45px;
+        .nav-item-link {
+            color: $main-blue;
+            letter-spacing: 0.1em;
+        }
+    }
+}
+
+//hello section
+.hello-section {
+    .container {
+        position: relative;
+        z-index: 3;
+    }
+
+    .hello-text {
+        padding: 90px 50px 25px 25px;
+    }
+
+    .main-header {
+        color: $main-blue;
+        text-transform: uppercase;
+        font-size: 27px;
+    }
+
+    .main-subheader {
+        font-size: 36px;
+        font-weight: 300;
+
+        &:after {
+            display: inline-block;
+            content: "";
+            border-top: 4px solid #5454ff;
+            width: 310px;
+            margin: -53px 77rem;
+            position: relative;
+            bottom: 40px;
+        }
+    }
+
+    .hello-section-dots {
+        position: absolute;
+        right: 400px;
+        top: 80px;
+    }
+}
+
+// SECTIONS 
+.first-section{
+    margin-bottom: 80px;
+}
+.section-text {
+    padding-left: 80px;
+    padding-right: 25px;
+}
+
+.section-header {
+    text-transform: uppercase;
+    line-height: 75px;
+    font-size: 67px;
+    display: inline-block;
+    width: 300px;
+    &:after {
+            display: inline-block;
+            content: "";
+            border-top: 5px solid $light-grey;
+            width: 284px;
+            position: relative;
+            bottom: 50px;
+    }
+}
+
+.section-subheader {
+    margin-top: -50px;
+}
+
+.first-section-img {
+    padding-left: 140px;
+}
+
+.second-section {
+    .stripes {
+        padding: 80px;
+    }
+}
+
+// OUR PROJECTS SECTION
+
+.our-projects {
+    background-color: $dark-grey;
+    padding: 60px;
+    position: relative;
+
+    .container {
+        position: relative;
+        z-index: 3;
+    }
+
+    .our-projects-section-dots {
+        position: absolute;
+        right: 300px;
+        top: -113px;
+    }
+
+    .section-header {
+        display: block;
+        width: 100%;
+
+        &:after {
+            display: block;
+            content: "";
+            border-top: 5px solid #fff;
+            width: 410px;
+            position: relative;
+            bottom: -8px;
+            margin: 0 auto;
+        }
+    }
+    .our-projects-subheader {
+        padding: 40px;
+        width: 500px;
+        margin: 0 auto;
+    }
+}
+
+// OUR PROJECTS SECTION -- END 
+
+//  WHO WE ARE SECTION
+
+.who-we-are {
+    .section-header {
+        display: block;
+        width: 100%;
+        padding-bottom: 70px;
+
+        &:after {
+            content: none;
+        }
+    }
+
+    .our-images {
+        padding-bottom: 70px;
+
+        .image-box {
+            text-align: center;
+        }
+    }
+
+    .who-we-are-list-container {
+        &:after {
+            display: block;
+            content: "";
+            border-top: 5px solid $light-grey;
+            width: 304px;
+            position: relative;
+            bottom: -8px;
+            left: 23px;
+        }
+    }
+
+    .who-we-are-list-title {
+        text-transform: uppercase;
+        color: $main-blue;
+        font-size: 20px;
+        padding-left: 25px;
+    }
+
+    .who-we-are-list {
+        list-style-type: square;
+        color: $main-blue;
+
+        span {
+            color: black;
+        }
+    }
+
+    .our-strengths {
+        text-transform: uppercase;
+        color: $main-blue;
+        font-size: 20px;
+    }
+
+    .who-we-are-subheader {
+           width: 70%;
+
+            &:after {
+            display: block;
+            content: "";
+            border-top: 5px solid $light-grey;
+            width: 400px;
+            position: relative;
+            bottom: -20px;
+            left: 0;
+        }
+    }
+}
+
+// WHO WE ARE SECTION -- END 
+
+// FOOTER 
+
+.footer {
+    background-color: $dark-grey;
+    padding: 30px;
+
+    .icons {
+        padding-left: 40px;
+    }
+}
+
+// FOOTER END

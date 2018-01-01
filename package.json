@@ -1,0 +1,25 @@
+{
+  "name": "glitter",
+  "version": "1.0.0",
+  "description": "glitter websit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css": "node-sass --include-path scss scss/main.scss css/main.css",
+    "css:watch": "node-sass scss/main.scss css/main.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DagmaraJagodzinska/Glitter.git"
+  },
+  "author": "daga",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^v3.3.7"
+  },
+  "start": "http-server -a localhost -p 8000 -c-1",
+  "bugs": {
+    "url": "https://github.com/DagmaraJagodzinska/Glitter/issues"
+  },
+  "homepage": "https://github.com/DagmaraJagodzinska/Glitter#readme"
+}
