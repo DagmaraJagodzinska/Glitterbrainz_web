@@ -1,6 +1,7 @@
 // COLORS
 
 $white: #fff;
+$main-font-color: #373D3F;
 $main-blue: #5454ff;
 $main-blue-hover:#2221d3;
 $second-blue: #29d4be;
@@ -14,11 +15,14 @@ $hover-violet: #ab22d8;
 
 // TYPOGRAPHY
 
-$Roboto : 'Roboto', sans-serif;
-$Oswald : 'Oswald', sans-serif;
+$Roboto: 'Roboto', sans-serif;
+$Oswald: 'Oswald', sans-serif;
 
-$btn-font-size-desktop: 20px;
-$h2-desktop-font-size : 67px;
+$btn-font-size: 20px;
+$h2-font-size: 67px;
+$main-header-font-size: 27px;
+$main-subheader-font-size: 36px;
+$section-header-font-size: 67px; 
 
 .main-header,
 .section-header,
@@ -28,12 +32,25 @@ $h2-desktop-font-size : 67px;
 }
 
 h2 {
-    font-size: $h2-desktop-font-size;
+    font-size: $h2-font-size;
 }
 
 .is-bold {
     font-weight: 700;
 }
+
+// BREAKPOINTS
+$min-width-xs : 480px;
+$min-width-sm : 780px;
+$min-width-md : 992px;
+$min-width-st : 1024px;
+$min-width-lg : 1200px;
+$max-width-xxs : $min-width-xs - 1;
+$max-width-xs : $min-width-sm - 1;
+$max-width-sm : $min-width-md - 1;
+$max-width-md : $min-width-st - 1;
+$max-width-st : $min-width-lg - 1;
+
 
 // BUTTON
 
@@ -42,7 +59,7 @@ h2 {
     border: none;
     border-radius: 0;
     padding: 10px 44px;
-    font-size: $btn-font-size-desktop;
+    font-size: $btn-font-size;
     text-transform: uppercase;
     font-weight: 300;
 
@@ -58,6 +75,7 @@ body {
     margin: 0;
     background-color: $white;
     font-family: $Roboto;
+    color: $main-font-color;
 }
 
 header {
@@ -127,21 +145,28 @@ section {
     .main-header {
         color: $main-blue;
         text-transform: uppercase;
-        font-size: 27px;
+        font-size: $main-header-font-size ;
     }
 
     .main-subheader {
-        font-size: 36px;
+        font-size: $main-subheader-font-size;
         font-weight: 300;
 
         &:after {
             display: inline-block;
             content: "";
-            border-top: 4px solid #5454ff;
-            width: 310px;
-            margin: -53px 77rem;
+            border-top: 4px solid $main-blue;
+            width: 362px;
             position: relative;
-            bottom: 40px;
+            bottom: 0;
+            right: -420px;
+
+            @media (max-width: $max-width-st) {
+                right: -535px;
+            }
+            @media (max-width: $max-width-sm) {
+                right: -320px;
+            }
         }
     }
 
@@ -149,13 +174,49 @@ section {
         position: absolute;
         right: 400px;
         top: 80px;
+
+        @media (max-width: $max-width-st) {
+            right: 135px;
+        }
     }
 }
 
 // SECTIONS 
-.first-section{
+.first-section {
     margin-bottom: 80px;
+
+    .section-text {
+        @media (max-width: $max-width-sm) {
+            padding-left: 0;
+        }
+    }
 }
+
+.first-section-img {
+    padding-left: 140px;
+
+    @media (max-width: $max-width-st) {
+        padding-left: 70px;
+    }
+    @media (max-width: $max-width-sm) {
+        padding-left: 0;
+    }
+}
+
+.second-section-img {
+    @media (max-width: $max-width-sm) {
+        width: 90%;
+    }
+}
+
+.third-section {
+    .section-text {
+        @media (max-width: $max-width-sm) {
+            padding-left: 0;
+        }
+    }
+}
+
 .section-text {
     padding-left: 80px;
     padding-right: 25px;
@@ -164,7 +225,7 @@ section {
 .section-header {
     text-transform: uppercase;
     line-height: 75px;
-    font-size: 67px;
+    font-size: $section-header-font-size;
     display: inline-block;
     width: 300px;
     &:after {
@@ -179,10 +240,6 @@ section {
 
 .section-subheader {
     margin-top: -50px;
-}
-
-.first-section-img {
-    padding-left: 140px;
 }
 
 .second-section {
@@ -207,6 +264,10 @@ section {
         position: absolute;
         right: 300px;
         top: -113px;
+
+        @media (max-width: $max-width-st) {
+            right: 140px;
+        }
     }
 
     .section-header {
@@ -216,7 +277,7 @@ section {
         &:after {
             display: block;
             content: "";
-            border-top: 5px solid #fff;
+            border-top: 5px solid $white;
             width: 410px;
             position: relative;
             bottom: -8px;
@@ -250,6 +311,10 @@ section {
 
         .image-box {
             text-align: center;
+
+            @media (max-width: $max-width-sm) {
+                margin-bottom: 60px;
+            }
         }
     }
 
@@ -290,6 +355,10 @@ section {
     .who-we-are-subheader {
            width: 70%;
 
+           @media (max-width: $max-width-sm) {
+                width: 100%;
+           }
+
             &:after {
             display: block;
             content: "";
@@ -298,6 +367,10 @@ section {
             position: relative;
             bottom: -20px;
             left: 0;
+
+            @media (max-width: $max-width-sm) {
+                width: 333px;
+           }
         }
     }
 }
@@ -316,3 +389,4 @@ section {
 }
 
 // FOOTER END
+

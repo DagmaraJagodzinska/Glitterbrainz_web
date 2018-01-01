@@ -28,7 +28,8 @@ h2 {
 body {
   margin: 0;
   background-color: #fff;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  color: #373D3F; }
 
 header {
   margin-bottom: 50px; }
@@ -84,18 +85,47 @@ section {
     display: inline-block;
     content: "";
     border-top: 4px solid #5454ff;
-    width: 310px;
-    margin: -53px 77rem;
+    width: 362px;
     position: relative;
-    bottom: 40px; }
+    bottom: 0;
+    right: -420px; }
+    @media (max-width: 1199px) {
+      .hello-section .main-subheader:after {
+        right: -535px; } }
+    @media (max-width: 991px) {
+      .hello-section .main-subheader:after {
+        right: -320px; } }
 
 .hello-section .hello-section-dots {
   position: absolute;
   right: 400px;
   top: 80px; }
+  @media (max-width: 1199px) {
+    .hello-section .hello-section-dots {
+      right: 135px; } }
 
 .first-section {
   margin-bottom: 80px; }
+  @media (max-width: 991px) {
+    .first-section .section-text {
+      padding-left: 0; } }
+
+.first-section-img {
+  padding-left: 140px; }
+  @media (max-width: 1199px) {
+    .first-section-img {
+      padding-left: 70px; } }
+  @media (max-width: 991px) {
+    .first-section-img {
+      padding-left: 0; } }
+
+@media (max-width: 991px) {
+  .second-section-img {
+    width: 90%; } }
+
+@media (max-width: 991px) {
+  .third-section .section-text {
+    padding-left: 0; } }
 
 .section-text {
   padding-left: 80px;
@@ -118,9 +148,6 @@ section {
 .section-subheader {
   margin-top: -50px; }
 
-.first-section-img {
-  padding-left: 140px; }
-
 .second-section .stripes {
   padding: 80px; }
 
@@ -135,6 +162,9 @@ section {
     position: absolute;
     right: 300px;
     top: -113px; }
+    @media (max-width: 1199px) {
+      .our-projects .our-projects-section-dots {
+        right: 140px; } }
   .our-projects .section-header {
     display: block;
     width: 100%; }
@@ -162,6 +192,9 @@ section {
   padding-bottom: 70px; }
   .who-we-are .our-images .image-box {
     text-align: center; }
+    @media (max-width: 991px) {
+      .who-we-are .our-images .image-box {
+        margin-bottom: 60px; } }
 
 .who-we-are .who-we-are-list-container:after {
   display: block;
@@ -191,6 +224,9 @@ section {
 
 .who-we-are .who-we-are-subheader {
   width: 70%; }
+  @media (max-width: 991px) {
+    .who-we-are .who-we-are-subheader {
+      width: 100%; } }
   .who-we-are .who-we-are-subheader:after {
     display: block;
     content: "";
@@ -199,6 +235,9 @@ section {
     position: relative;
     bottom: -20px;
     left: 0; }
+    @media (max-width: 991px) {
+      .who-we-are .who-we-are-subheader:after {
+        width: 333px; } }
 
 .footer {
   background-color: #e3e3e3;
