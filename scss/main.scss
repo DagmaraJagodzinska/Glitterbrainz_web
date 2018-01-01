@@ -124,6 +124,7 @@ section {
         text-decoration: none;
         text-transform: uppercase;
         padding-right: 45px;
+
         .nav-item-link {
             color: $main-blue;
             letter-spacing: 0.1em;
@@ -131,7 +132,7 @@ section {
     }
 }
 
-//hello section
+// HELLO SECTION
 .hello-section {
     .container {
         position: relative;
@@ -140,17 +141,30 @@ section {
 
     .hello-text {
         padding: 90px 50px 25px 25px;
+
+        @media (max-width: $max-width-xs) {
+            padding: 35px 35px 25px 25px;
+        }
     }
 
     .main-header {
         color: $main-blue;
         text-transform: uppercase;
         font-size: $main-header-font-size ;
+
+        @media (max-width: $max-width-xs) {
+            text-align: center;
+        }
     }
 
     .main-subheader {
         font-size: $main-subheader-font-size;
         font-weight: 300;
+
+        @media (max-width: $max-width-xs) {
+            text-align: center;
+            font-size: 22px;
+        }
 
         &:after {
             display: inline-block;
@@ -167,6 +181,9 @@ section {
             @media (max-width: $max-width-sm) {
                 right: -320px;
             }
+            @media (max-width: $max-width-xs) {
+                display: none;
+            }
         }
     }
 
@@ -177,6 +194,10 @@ section {
 
         @media (max-width: $max-width-st) {
             right: 135px;
+        }
+        @media (max-width: $max-width-xs) {
+            width: 36%;
+            right: 32%;
         }
     }
 }
@@ -192,6 +213,10 @@ section {
     }
 }
 
+.first-section-container {
+    text-align: center;
+}
+
 .first-section-img {
     padding-left: 140px;
 
@@ -201,12 +226,42 @@ section {
     @media (max-width: $max-width-sm) {
         padding-left: 0;
     }
+    @media (max-width: $max-width-xs) {
+        padding: 20px;
+        width: 50%;
+    }
+}
+.second-section {
+    .row {
+        @media (max-width: $max-width-xs) {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+    }
+
+    .second-section-img-container {
+        @media (max-width: $max-width-xs) {
+            order: 2;
+            text-align: center;
+        }
+    }
+
+    .second-section-text-container {
+        @media (max-width: $max-width-xs) {
+            order: 1;
+        }
+    }
 }
 
 .second-section-img {
     @media (max-width: $max-width-sm) {
         width: 90%;
     }
+    @media (max-width: $max-width-xs) {
+        width: 50%;
+    }    
+
 }
 
 .third-section {
@@ -217,9 +272,17 @@ section {
     }
 }
 
+.third-section-img-container {
+    text-align: center;
+}
+
 .section-text {
     padding-left: 80px;
     padding-right: 25px;
+        @media (max-width: $max-width-xs) {
+        text-align: center;
+        padding: 0;
+    }
 }
 
 .section-header {
@@ -228,6 +291,12 @@ section {
     font-size: $section-header-font-size;
     display: inline-block;
     width: 300px;
+
+    @media (max-width: $max-width-xs) {
+        line-height: 70px;
+        font-size: 45px;
+    }
+
     &:after {
             display: inline-block;
             content: "";
@@ -240,13 +309,18 @@ section {
 
 .section-subheader {
     margin-top: -50px;
-}
-
-.second-section {
-    .stripes {
-        padding: 80px;
+    
+    @media (max-width: $max-width-xs) {
+        padding: 20px 80px;
+        text-align: center;
     }
 }
+
+// .second-section {
+//     .stripes {
+//         padding: 80px;
+//     }
+// }
 
 // OUR PROJECTS SECTION
 
@@ -296,6 +370,10 @@ section {
 //  WHO WE ARE SECTION
 
 .who-we-are {
+    @media (max-width: $max-width-xs) {
+         text-align: center;
+    }
+
     .section-header {
         display: block;
         width: 100%;
