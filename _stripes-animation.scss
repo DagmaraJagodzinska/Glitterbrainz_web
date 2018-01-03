@@ -1,0 +1,74 @@
+$max-height: 500px;
+$stripe-green-color: #32cec0;
+$stripe-viol-color: #5254ff;
+$stripe-lightgreen-color: lightgreen;
+$stripe-lightgrey-color: lightgrey;
+
+.equilizer {
+  width: 70vw;
+
+  .bar {
+    fill: $stripe-lightgrey-color;
+    width: 0;
+    height: 3px;
+
+    &:nth-child(1) {
+      transition: width 2.5s ease 0.25s, fill 2s ease 1s;
+    }
+
+    &:nth-child(2) {
+      transition: width 2.5s ease 0.45s, fill 2s ease 1s;
+    }
+
+    &:nth-child(3) {
+      transition: width 2.5s ease, fill 2s ease 1s;
+    }
+
+    &:nth-child(4) {
+      transition: width 2.5s ease 0.7s, fill 2s ease 1s;
+    }
+
+    &:nth-child(5) {
+      transition: width 2.5s ease 0.15s, fill 2s ease 1s;
+    }
+
+    &:nth-child(6) {
+      transition: width 2.5s ease 0.65s, fill 2s ease 1s;
+    }
+
+    &:nth-child(7) {
+      transition: width 2.5s ease 0.55s, fill 2s ease 1s;
+    }
+
+    &:nth-child(8) {
+      transition: width 2.5s ease 0.15s, fill 2s ease 1s;
+    }
+
+    &:nth-child(9) {
+      transition: width 2.5s ease 0.65s, fill 2s ease 1s;
+    }
+
+    &:nth-child(10) {
+      transition: width 2.5s ease 0.45s, fill 2s ease 1s;
+    }
+
+    &:nth-child(11) {
+      transition: width 2.5s ease 0.5s, fill 2s ease 1s;
+    }
+  }
+}
+
+.equilizer {
+  &.visible .bar {
+    width: 70vw;
+    fill: $stripe-green-color;
+  }
+}
+
+.equilizer-right {
+  @extend .equilizer;
+  transform: rotate(180deg);
+  & .visible .bar {
+    fill: red;
+  }
+}
