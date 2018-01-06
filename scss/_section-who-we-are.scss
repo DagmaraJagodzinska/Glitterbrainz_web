@@ -1,0 +1,83 @@
+.who-we-are {
+  @media (max-width: $max-width-xs) {
+    text-align: center;
+  }
+
+  .section-header {
+    display: block;
+    width: 100%;
+    padding-bottom: 70px;
+
+    &:after {
+      content: none;
+    }
+  }
+
+  .our-images {
+    padding-bottom: 70px;
+
+    .image-box {
+      text-align: center;
+
+      @media (max-width: $max-width-sm) {
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  .who-we-are-list-container {
+    &:after {
+      display: block;
+      content: "";
+      border-top: 5px solid $light-grey;
+      width: 304px;
+      position: relative;
+      bottom: -8px;
+      left: 23px;
+    }
+  }
+
+  .who-we-are-list-title {
+    text-transform: uppercase;
+    color: $main-blue;
+    font-size: 20px;
+    padding-left: 25px;
+  }
+
+  .who-we-are-list {
+    list-style-type: square;
+    color: $main-blue;
+
+    span {
+      color: black;
+    }
+  }
+
+  .our-strengths {
+    text-transform: uppercase;
+    color: $main-blue;
+    font-size: 20px;
+  }
+
+  .who-we-are-subheader {
+    width: 70%;
+
+    @media (max-width: $max-width-sm) {
+      width: 100%;
+    }
+
+    &:after {
+      display: block;
+      content: "";
+      border-top: 5px solid $light-grey;
+      width: 400px;
+      position: relative;
+      bottom: -20px;
+      left: 0;
+
+      @media (max-width: $max-width-sm) {
+        width: 333px;
+      }
+    }
+  }
+}

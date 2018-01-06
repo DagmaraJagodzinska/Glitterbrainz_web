@@ -1,0 +1,23 @@
+$Roboto: 'Roboto', sans-serif;
+$Oswald: 'Oswald', sans-serif;
+
+$btn-font-size: 20px;
+$h2-font-size: 67px;
+$main-header-font-size: 27px;
+$main-subheader-font-size: 36px;
+$section-header-font-size: 67px;
+
+.main-header,
+.section-header,
+.who-we-are-list-title ,
+.our-strengths {
+  font-family: $Oswald;
+}
+
+h2 {
+  font-size: $h2-font-size;
+}
+
+.is-bold {
+  font-weight: 700;
+}

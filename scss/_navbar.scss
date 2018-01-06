@@ -1,0 +1,42 @@
+.navbar-default {
+  background: $white;
+  border: none;
+}
+
+.nav {
+  margin: -32px -22px -25px 0;
+  .nav-item {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-right: 45px;
+
+    .nav-item-link {
+      color: $main-blue;
+      letter-spacing: 0.1em;
+    }
+  }
+}
+
+// NAV COLOR HOVER ANIMATION
+.navbar-default .navbar-nav>li>a:hover {
+  color: $second-blue;
+}
+
+.change-color:hover {
+  animation-name: textcolor;
+  animation-duration: 1s;
+}
+
+@keyframes textcolor {
+  0% {
+    color: $hover-violet;
+  }
+  50% {
+    color: $hover-violet;
+  }
+  100% {
+    color: $second-blue;
+  }
+}
+
+// NAV COLOR HOVER ANIMATION -- END

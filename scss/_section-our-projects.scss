@@ -1,0 +1,40 @@
+.our-projects {
+  background-color: $dark-grey;
+  padding: 60px;
+  position: relative;
+
+  .container {
+    position: relative;
+    z-index: 3;
+  }
+
+  .our-projects-section-dots {
+    position: absolute;
+    right: 300px;
+    top: -113px;
+
+    @media (max-width: $max-width-st) {
+      right: 140px;
+    }
+  }
+
+  .section-header {
+    display: block;
+    width: 100%;
+
+    &:after {
+      display: block;
+      content: "";
+      border-top: 5px solid $white;
+      width: 410px;
+      position: relative;
+      bottom: -8px;
+      margin: 0 auto;
+    }
+  }
+  .our-projects-subheader {
+    padding: 40px;
+    width: 500px;
+    margin: 0 auto;
+  }
+}

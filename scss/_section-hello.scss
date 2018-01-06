@@ -1,0 +1,68 @@
+.hello-section {
+  .container {
+    position: relative;
+    z-index: 3;
+  }
+
+  .hello-text {
+    padding: 90px 50px 25px 25px;
+
+    @media (max-width: $max-width-xs) {
+      padding: 35px 35px 25px 25px;
+    }
+  }
+
+  .main-header {
+    color: $main-blue;
+    text-transform: uppercase;
+    font-size: $main-header-font-size ;
+
+    @media (max-width: $max-width-xs) {
+      text-align: center;
+    }
+  }
+
+  .main-subheader {
+    font-size: $main-subheader-font-size;
+    font-weight: 300;
+
+    @media (max-width: $max-width-xs) {
+      text-align: center;
+      font-size: 22px;
+    }
+
+    &:after {
+      display: inline-block;
+      content: "";
+      border-top: 4px solid $main-blue;
+      width: 362px;
+      position: relative;
+      bottom: 0;
+      right: -420px;
+
+      @media (max-width: $max-width-st) {
+        right: -535px;
+      }
+      @media (max-width: $max-width-sm) {
+        right: -320px;
+      }
+      @media (max-width: $max-width-xs) {
+        display: none;
+      }
+    }
+  }
+
+  .hello-section-dots {
+    position: absolute;
+    right: 400px;
+    top: 80px;
+
+    @media (max-width: $max-width-st) {
+      right: 135px;
+    }
+    @media (max-width: $max-width-xs) {
+      width: 36%;
+      right: 32%;
+    }
+  }
+}
