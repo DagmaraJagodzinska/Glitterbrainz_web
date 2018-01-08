@@ -4,5 +4,16 @@
 
   .icons {
     padding-left: 40px;
+    
+    @media (max-width: $max-width-xs) {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+  }
+
+  .rights {
+    @media (max-width: $max-width-xs) {
+        text-align: center;
+    }
   }
 }

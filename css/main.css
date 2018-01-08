@@ -1,3 +1,30 @@
+.main-header,
+.section-header,
+.who-we-are-list-title,
+.our-strengths {
+  font-family: "Oswald", sans-serif; }
+
+h2 {
+  font-size: 67px; }
+
+.is-bold {
+  font-weight: 700; }
+
+.is-blue {
+  color: #5454ff; }
+
+.btn-blue-custom {
+  background-color: #5454ff;
+  border: none;
+  border-radius: 0;
+  padding: 10px 44px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 300; }
+  .btn-blue-custom:hover {
+    background-color: #2221d3;
+    color: #fff; }
+
 .equilizer, .equilizer-right {
   width: 70vw; }
   .equilizer .bar, .equilizer-right .bar {
@@ -32,24 +59,13 @@
   fill: #32cec0; }
 
 .equilizer-right {
+  width: 50vw;
   transform: rotate(180deg); }
+  @media (max-width: 779px) {
+    .equilizer-right {
+      width: 100%; } }
   .equilizer-right .visible .bar {
     fill: red; }
-
-.main-header,
-.section-header,
-.who-we-are-list-title,
-.our-strengths {
-  font-family: "Oswald", sans-serif; }
-
-h2 {
-  font-size: 67px; }
-
-.is-bold {
-  font-weight: 700; }
-
-.is-blue {
-  color: #5454ff; }
 
 .navbar-default {
   background: #fff;
@@ -82,6 +98,10 @@ h2 {
 
 .first-section {
   margin-bottom: 80px; }
+  @media (max-width: 779px) {
+    .first-section {
+      margin-top: -80px;
+      margin-bottom: 20px; } }
   @media (max-width: 991px) {
     .first-section .section-text {
       padding-left: 0; } }
@@ -116,6 +136,11 @@ h2 {
 @media (max-width: 779px) {
   .second-section .second-section-text-container {
     order: 1; } }
+
+@media (max-width: 779px) {
+  .second-section .stripes {
+    margin-top: -50px;
+    margin-bottom: 30px; } }
 
 @media (max-width: 991px) {
   .second-section-img {
@@ -233,32 +258,54 @@ h2 {
 
 .who-we-are .our-images {
   padding-bottom: 70px; }
+  @media (max-width: 779px) {
+    .who-we-are .our-images {
+      padding-bottom: 20px; } }
   .who-we-are .our-images .image-box {
     text-align: center; }
     @media (max-width: 991px) {
       .who-we-are .our-images .image-box {
         margin-bottom: 60px; } }
 
+@media (max-width: 779px) {
+  .who-we-are .who-we-are-list-container {
+    margin-bottom: 40px; } }
+
 .who-we-are .who-we-are-list-container:after {
   display: block;
   content: "";
   border-top: 5px solid #f0eeee;
-  width: 304px;
+  width: 390px;
   position: relative;
   bottom: -8px;
   left: 23px; }
+  @media (max-width: 991px) {
+    .who-we-are .who-we-are-list-container:after {
+      width: 315px; } }
+  @media (max-width: 779px) {
+    .who-we-are .who-we-are-list-container:after {
+      width: 77%;
+      margin: 0 auto;
+      left: 0; } }
 
 .who-we-are .who-we-are-list-title {
   text-transform: uppercase;
   color: #5454ff;
   font-size: 20px;
   padding-left: 25px; }
+  @media (max-width: 779px) {
+    .who-we-are .who-we-are-list-title {
+      padding-left: 0; } }
 
-.who-we-are .who-we-are-list {
-  list-style-type: square;
-  color: #5454ff; }
-  .who-we-are .who-we-are-list span {
-    color: black; }
+.who-we-are .who-we-are-text {
+  width: 70%;
+  padding-left: 25px; }
+  @media (max-width: 991px) {
+    .who-we-are .who-we-are-text {
+      width: 100%; } }
+  @media (max-width: 779px) {
+    .who-we-are .who-we-are-text {
+      padding: 10px 80px 5px 80px; } }
 
 .who-we-are .our-strengths {
   text-transform: uppercase;
@@ -270,6 +317,9 @@ h2 {
   @media (max-width: 991px) {
     .who-we-are .who-we-are-subheader {
       width: 100%; } }
+  @media (max-width: 779px) {
+    .who-we-are .who-we-are-subheader {
+      padding: 10px 80px 5px 80px; } }
   .who-we-are .who-we-are-subheader:after {
     display: block;
     content: "";
@@ -281,6 +331,9 @@ h2 {
     @media (max-width: 991px) {
       .who-we-are .who-we-are-subheader:after {
         width: 333px; } }
+    @media (max-width: 779px) {
+      .who-we-are .who-we-are-subheader:after {
+        width: 100%; } }
 
 .our-projects {
   background-color: #e3e3e3;
@@ -307,16 +360,29 @@ h2 {
       position: relative;
       bottom: -8px;
       margin: 0 auto; }
+      @media (max-width: 779px) {
+        .our-projects .section-header:after {
+          width: 85%; } }
   .our-projects .our-projects-subheader {
     padding: 40px;
     width: 500px;
     margin: 0 auto; }
+    @media (max-width: 779px) {
+      .our-projects .our-projects-subheader {
+        width: 85%; } }
 
 .footer {
   background-color: #e3e3e3;
   padding: 30px; }
   .footer .icons {
     padding-left: 40px; }
+    @media (max-width: 779px) {
+      .footer .icons {
+        text-align: center;
+        margin-bottom: 10px; } }
+  @media (max-width: 779px) {
+    .footer .rights {
+      text-align: center; } }
 
 body {
   margin: 0;

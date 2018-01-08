@@ -1,206 +1,218 @@
 <!-- plik index.html -->
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Glitterbrainz</title>
-		<link href="https://fonts.googleapis.com/css?family=Oswald|Roboto:300,400,500,700" rel="stylesheet">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">	
-		<link rel="stylesheet" href="css/main.css" />
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-		<script src="equalizer.js"></script>
-	</head>
-	<body>
-		<header class="container">
-	<nav class="navbar navbar-default">
-	<div class="container-fluid">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Glitterbrainz</title>
+	<link href="https://fonts.googleapis.com/css?family=Oswald|Roboto:300,400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	    crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+	    crossorigin="anonymous"></script>
+	<script src="equalizer.js"></script>
+</head>
+
+<body>
+	<header class="container">
+		<nav class="navbar navbar-default">
 			<div class="container-fluid">
-				<div class="navbar-header">
-					<a class="navbar-brand" href="#">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="#">
 						<img alt="gltterbrainz logo" src="img/logo.png">
 					</a>
+					</div>
 				</div>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="nav-item"><a class="nav-item-link change-color" href="#">O nas</a></li>
+					<li class="nav-item"><a class="nav-item-link change-color" href="#">Blog</a></li>
+					<li class="nav-item"><a class="nav-item-link change-color" href="#">Kontakt</a></li>
+				</ul>
 			</div>
-			<ul class="nav navbar-nav navbar-right">
-				<li class="nav-item"><a class="nav-item-link change-color" href="#">O nas</a></li>
-				<li class="nav-item"><a class="nav-item-link change-color" href="#">Blog</a></li>
-				<li class="nav-item"><a class="nav-item-link change-color" href="#">Kontakt</a></li>
-			</ul>
-		</div>
-	</div>
-	</nav>
+			</div>
+		</nav>
 	</header>
-		<section class="hello-section">
-			<div class="container">
-				<div class="hello-text">
-					<h1 class="text-left main-header">Jesteśmy <span class="is-bold">Glitterbrainz</span></h1>
-					<p class="text-left main-subheader">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.</p>
-				</div>
+	<section class="hello-section">
+		<div class="container">
+			<div class="hello-text">
+				<h1 class="text-left main-header">Jesteśmy <span class="is-bold">Glitterbrainz</span></h1>
+				<p class="text-left main-subheader">Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit
+					lectus felis, malesuada ultricies.</p>
 			</div>
-			<img class="hello-section-dots" alt="dots" src="img/hello-dots.png">
-		</section>
-		<section class="stripes">
-			<!--<img alt="stripes" src="img/stripes.png">-->
-			<svg xmlns="http://www.w3.org/2000/svg" class="equilizer" >
-				<g>
-					<rect class="bar" transform="translate(0,0)" x="0"></rect>
-					<rect class="bar" transform="translate(0,10)" x="0"></rect>
-					<rect class="bar" transform="translate(0,20)" x="0"></rect>
-					<rect class="bar" transform="translate(0,30)" x="0"></rect>
-					<rect class="bar" transform="translate(0,40)" x="0"></rect>
-					<rect class="bar" transform="translate(0,50)" x="0"></rect>
-					<rect class="bar" transform="translate(0,60)" x="0"></rect>
-					<rect class="bar" transform="translate(0,70)" x="0"></rect>
-					<rect class="bar" transform="translate(0,80)" x="0"></rect>
-					<rect class="bar" transform="translate(0,90)" x="0"></rect>
-				</g>
-			</svg>
-		</section>
-		<section class="first-section">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-sm-6 col-md-6">
-						<div class="section-text">
-							<h2 class="section-header">Lubimy <span class="is-blue">ponczki</span></h2>
-							<p class="text-left section-subheader">Lorem ipsum dolor st enim. Etiam ullamcorper. Suspendisse a pellentesque dui, no n felis. Maecenas malesuada elit lectus felis, malesuada ultricies.</p>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-6 first-section-container">
-						<img class="first-section-img" alt="gltterbrainz logo" src="img/ponczek.png">
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="second-section">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-sm-6 col-md-6 second-section-img-container">
-						<img class="second-section-img" alt="dog" src="img/dog.png">
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-6 second-section-text-container">
-						<div class="section-text">
-							<h2 class="section-header">I <span class="is-blue">pieski</span></h2>
-							<p class="text-left section-subheader">Lorem ipsum dolor st enim. Etiam ullamcorper. Suspendisse a pellentesque dui, no n felis. Maecenas malesuada elit lectus felis, malesuada ultricies.</p>
-						</div>
-						<div class="stripes">
-							<!--<img alt="gltterbrainz logo" src="img/stripes.png">-->
-							<svg xmlns="http://www.w3.org/2000/svg" class="equilizer equilizer-right" >
-								<g>
-									<rect class="bar" transform="translate(0,0)" x="0"></rect>
-									<rect class="bar" transform="translate(0,10)" x="0"></rect>
-									<rect class="bar" transform="translate(0,20)" x="0"></rect>
-									<rect class="bar" transform="translate(0,30)" x="0"></rect>
-									<rect class="bar" transform="translate(0,40)" x="0"></rect>
-									<rect class="bar" transform="translate(0,50)" x="0"></rect>
-									<rect class="bar" transform="translate(0,60)" x="0"></rect>
-									<rect class="bar" transform="translate(0,70)" x="0"></rect>
-									<rect class="bar" transform="translate(0,80)" x="0"></rect>
-									<rect class="bar" transform="translate(0,90)" x="0"></rect>
-								</g>
-							</svg>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="third-section">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-sm-6 col-md-6">
-						<div class="section-text">
-							<h2 class="section-header">Lubimy <span class="is-blue">Vadera</span></h2>
-							<p class="text-left section-subheader">Lorem ipsum dolor st enim. Etiam ullamcorper. Suspendisse a pellentesque dui, no n felis. Maecenas malesuada elit lectus felis, malesuada ultricies.</p>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-6 third-section-img-container">
-						<img class="first-section-img" alt="gltterbrainz logo" src="img/vader.png">
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="stripes">
-			<!--<img alt="gltterbrainz logo" src="img/stripes_green.png">-->
-			<svg xmlns="http://www.w3.org/2000/svg" class="equilizer" >
-				<g>
-					<rect class="bar" transform="translate(0,0)" x="0"></rect>
-					<rect class="bar" transform="translate(0,10)" x="0"></rect>
-					<rect class="bar" transform="translate(0,20)" x="0"></rect>
-					<rect class="bar" transform="translate(0,30)" x="0"></rect>
-					<rect class="bar" transform="translate(0,40)" x="0"></rect>
-					<rect class="bar" transform="translate(0,50)" x="0"></rect>
-					<rect class="bar" transform="translate(0,60)" x="0"></rect>
-					<rect class="bar" transform="translate(0,70)" x="0"></rect>
-					<rect class="bar" transform="translate(0,80)" x="0"></rect>
-					<rect class="bar" transform="translate(0,90)" x="0"></rect>
-				</g>
-			</svg>
-		</section>
-		<section class="our-projects">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 col-sm-12">
-						<div class="text-center">
-							<h2 class="section-header">Nasze <span class="is-blue">projekty</span></h2>
-							<p class="our-projects-subheader">Lorem ipsum dolor st enim. Etiam ullamcorper. Suspendisse a pellentesque dui, no n felis. Maecenas malesuada elit lectus felis, malesuada ultricies.</p>
-							<button type="button" class="btn btn-primary btn-blue-custom">Sprawdź</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<img class="our-projects-section-dots" alt="dots" src="img/dots.png">
-		</section>
-		<section class="who-we-are">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 text-center">
-						<h2 class="section-header">Kim <span class="is-blue">jesteśmy?</span></h2>
-					</div>
-				</div>
-				<div class="our-images row">
-					<div class="image-box col-xs-6 col-md-3 col-sm-6">
-						<img alt="gltterbrainz logo" src="img/MO.png">
-					</div>
-					<div class="image-box col-xs-6 col-md-3 col-sm-6">
-						<img alt="gltterbrainz logo" src="img/KUB.png">
-					</div>
-					<div class="image-box col-xs-6 col-md-3 col-sm-6">
-						<img alt="gltterbrainz logo" src="img/DAG.png">
-					</div>
-					<div class="image-box col-xs-6 col-md-3 col-sm-6">
-						<img alt="gltterbrainz logo" src="img/PI.png">
-					</div>				
-				</div>
-				<div class="row">
-					<div class="col-xs-12 col-sm-6 col-md-6 who-we-are-list-container">
-						<p class="who-we-are-list-title is-bold">Nasze zainteresowania</p>
-						<ul class="who-we-are-list">
-							<li><span>zaczytanie w tramwajach, komiksy na kanapie</span></li>
-							<li><span>zaczytanie w tramwajach, komiksy na kanapie</span></li>
-							<li><span>zaczytanie w tramwajach, komiksy na kanapie</span></li>
-							<li><span>zaczytanie w tramwajach, komiksy na kanapie</span></li>
-							<li><span>zaczytanie w tramwajach, komiksy na kanapie</span></li>							
-						</ul>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-6">
-						<p class="our-strengths">Nasze dobre strony</p>
-						<p class="who-we-are-subheader">Suspendisse a pellentesque dui, no n felis. Maecenas malesuada elit lectus felis, malesuada ultricies.Suspendisse a pellentesque dui, no n felis. Maecenas malesuada elit lectus felis, malesuada ultricies.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-	</body>
-	<footer class="footer">
+		</div>
+		<img class="hello-section-dots" alt="dots" src="img/hello-dots.png">
+	</section>
+	<section class="stripes">
+		<!--<img alt="stripes" src="img/stripes.png">-->
+		<svg xmlns="http://www.w3.org/2000/svg" class="equilizer">
+			<g>
+				<rect class="bar" transform="translate(0,0)" x="0"></rect>
+				<rect class="bar" transform="translate(0,10)" x="0"></rect>
+				<rect class="bar" transform="translate(0,20)" x="0"></rect>
+				<rect class="bar" transform="translate(0,30)" x="0"></rect>
+				<rect class="bar" transform="translate(0,40)" x="0"></rect>
+				<rect class="bar" transform="translate(0,50)" x="0"></rect>
+				<rect class="bar" transform="translate(0,60)" x="0"></rect>
+				<rect class="bar" transform="translate(0,70)" x="0"></rect>
+				<rect class="bar" transform="translate(0,80)" x="0"></rect>
+				<rect class="bar" transform="translate(0,90)" x="0"></rect>
+			</g>
+		</svg>
+	</section>
+	<section class="first-section">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12 col-sm-6 col-md-6 icons">
-					icons - to do
-				</div>
 				<div class="col-xs-12 col-sm-6 col-md-6">
-					<p class="text-right">©Glitterbrainz | All rights Reserved 2018</p>
+					<div class="section-text">
+						<h2 class="section-header">Lubimy <span class="is-blue">ponczki</span></h2>
+						<p class="text-left section-subheader">Lorem ipsum dolor st enim. Etiam ullamcorper. Suspendisse a pellentesque dui, no n felis. Maecenas malesuada elit lectus
+							felis, malesuada ultricies.</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6 first-section-container">
+					<img class="first-section-img" alt="gltterbrainz logo" src="img/ponczek.png">
 				</div>
 			</div>
 		</div>
-	</footer>
+	</section>
+	<section class="second-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-6 second-section-img-container">
+					<img class="second-section-img" alt="dog" src="img/dog.png">
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6 second-section-text-container">
+					<div class="section-text">
+						<h2 class="section-header">I <span class="is-blue">pieski</span></h2>
+						<p class="text-left section-subheader">Lorem ipsum dolor st enim. Etiam ullamcorper. Suspendisse a pellentesque dui, no n felis. Maecenas malesuada elit lectus
+							felis, malesuada ultricies.</p>
+					</div>
+					<div class="stripes">
+						<!--<img alt="gltterbrainz logo" src="img/stripes.png">-->
+						<svg xmlns="http://www.w3.org/2000/svg" class="equilizer equilizer-right">
+							<g>
+								<rect class="bar" transform="translate(0,0)" x="0"></rect>
+								<rect class="bar" transform="translate(0,10)" x="0"></rect>
+								<rect class="bar" transform="translate(0,20)" x="0"></rect>
+								<rect class="bar" transform="translate(0,30)" x="0"></rect>
+								<rect class="bar" transform="translate(0,40)" x="0"></rect>
+								<rect class="bar" transform="translate(0,50)" x="0"></rect>
+								<rect class="bar" transform="translate(0,60)" x="0"></rect>
+								<rect class="bar" transform="translate(0,70)" x="0"></rect>
+								<rect class="bar" transform="translate(0,80)" x="0"></rect>
+								<rect class="bar" transform="translate(0,90)" x="0"></rect>
+							</g>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="third-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-6">
+					<div class="section-text">
+						<h2 class="section-header">Lubimy <span class="is-blue">Vadera</span></h2>
+						<p class="text-left section-subheader">Lorem ipsum dolor st enim. Etiam ullamcorper. Suspendisse a pellentesque dui, no n felis. Maecenas malesuada elit lectus
+							felis, malesuada ultricies.</p>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6 third-section-img-container">
+					<img class="first-section-img" alt="gltterbrainz logo" src="img/vader.png">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="stripes">
+		<!--<img alt="gltterbrainz logo" src="img/stripes_green.png">-->
+		<svg xmlns="http://www.w3.org/2000/svg" class="equilizer">
+			<g>
+				<rect class="bar" transform="translate(0,0)" x="0"></rect>
+				<rect class="bar" transform="translate(0,10)" x="0"></rect>
+				<rect class="bar" transform="translate(0,20)" x="0"></rect>
+				<rect class="bar" transform="translate(0,30)" x="0"></rect>
+				<rect class="bar" transform="translate(0,40)" x="0"></rect>
+				<rect class="bar" transform="translate(0,50)" x="0"></rect>
+				<rect class="bar" transform="translate(0,60)" x="0"></rect>
+				<rect class="bar" transform="translate(0,70)" x="0"></rect>
+				<rect class="bar" transform="translate(0,80)" x="0"></rect>
+				<rect class="bar" transform="translate(0,90)" x="0"></rect>
+			</g>
+		</svg>
+	</section>
+	<section class="our-projects">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-sm-12">
+					<div class="text-center">
+						<h2 class="section-header">Nasze <span class="is-blue">projekty</span></h2>
+						<p class="our-projects-subheader">Lorem ipsum dolor st enim. Etiam ullamcorper. Suspendisse a pellentesque dui, no n felis. Maecenas malesuada elit lectus
+							felis, malesuada ultricies.</p>
+						<button type="button" class="btn btn-primary btn-blue-custom">Sprawdź</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<img class="our-projects-section-dots" alt="dots" src="img/dots.png">
+	</section>
+	<section class="who-we-are">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h2 class="section-header">Kim <span class="is-blue">jesteśmy?</span></h2>
+				</div>
+			</div>
+			<div class="our-images row">
+				<div class="image-box col-xs-6 col-md-3 col-sm-6">
+					<img alt="gltterbrainz logo" src="img/MO.png">
+				</div>
+				<div class="image-box col-xs-6 col-md-3 col-sm-6">
+					<img alt="gltterbrainz logo" src="img/KUB.png">
+				</div>
+				<div class="image-box col-xs-6 col-md-3 col-sm-6">
+					<img alt="gltterbrainz logo" src="img/DAG.png">
+				</div>
+				<div class="image-box col-xs-6 col-md-3 col-sm-6">
+					<img alt="gltterbrainz logo" src="img/PI.png">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-6 who-we-are-list-container">
+					<p class="who-we-are-list-title is-bold">Nasza historia</p>
+					<p class="who-we-are-text">
+						2017 to początek naszej znajomości. Dogadujemy się znakomicie i przeżywamy super przygody. Poza tym lubimy muzykę, książki,
+						zwierzęta i piękne rzeczy. 
+					</p>
+					<p class="who-we-are-text">
+						2018 podejmujemy decyzję aby razem pracować. Glitter Brainz to połączenie różnych doświadczeń
+						i ścieżek życiowych.
+					</p>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6">
+					<p class="our-strengths">Nasze dobre strony</p>
+					<p class="who-we-are-subheader">Jest wśród nas: etnograf, muzyk, artysta, marketingowiec, niedoszły historyk, były specjalista od spraw Iso, niejeden
+						front-end developer, social-media ninja, fotograf, a może nawet dwóch. Jak można określić nas w liczbach? Cztery osoby
+						i milion doświadczeń! Z połączenia super mocy zawsze wychodzą świetne projekty.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-md-6 icons">
+				icons - to do
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-6">
+				<p class="text-right rights">©Glitterbrainz | All rights Reserved 2018</p>
+			</div>
+		</div>
+	</div>
+</footer>
 </html>

@@ -1,5 +1,10 @@
 .first-section {
   margin-bottom: 80px;
+  
+  @media (max-width: $max-width-xs) {
+    margin-top: -80px;
+    margin-bottom: 20px;
+  }
 
   .section-text {
     @media (max-width: $max-width-sm) {
@@ -45,6 +50,13 @@
   .second-section-text-container {
     @media (max-width: $max-width-xs) {
       order: 1;
+    }
+  }
+
+  .stripes {
+    @media (max-width: $max-width-xs) {
+      margin-top: -50px;
+      margin-bottom: 30px;
     }
   }
 }

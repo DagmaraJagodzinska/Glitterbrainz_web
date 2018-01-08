@@ -16,6 +16,10 @@
   .our-images {
     padding-bottom: 70px;
 
+    @media (max-width: $max-width-xs) {
+        padding-bottom: 20px;
+    }
+
     .image-box {
       text-align: center;
 
@@ -26,14 +30,26 @@
   }
 
   .who-we-are-list-container {
+    @media (max-width: $max-width-xs) {
+        margin-bottom: 40px;
+    }
     &:after {
       display: block;
       content: "";
       border-top: 5px solid $light-grey;
-      width: 304px;
+      width: 390px;
       position: relative;
       bottom: -8px;
       left: 23px;
+      
+      @media (max-width: $max-width-sm) {
+          width: 315px;
+      }
+      @media (max-width: $max-width-xs) {
+          width: 77%;
+          margin: 0 auto;
+          left: 0;
+      }
     }
   }
 
@@ -42,14 +58,32 @@
     color: $main-blue;
     font-size: 20px;
     padding-left: 25px;
+    
+    @media (max-width: $max-width-xs) {
+      padding-left: 0;
+    }
   }
 
-  .who-we-are-list {
-    list-style-type: square;
-    color: $main-blue;
+  // list styles 
+  // .who-we-are-list {
+  //   list-style-type: square;
+  //   color: $main-blue;
 
-    span {
-      color: black;
+  //   span {
+  //     color: black;
+  //   }
+  // }
+
+  .who-we-are-text {
+    width: 70%;
+    padding-left: 25px;
+
+    @media (max-width: $max-width-sm) {
+      width: 100%;
+    }
+
+    @media (max-width: $max-width-xs) {
+      padding: 10px 80px 5px 80px;
     }
   }
 
@@ -65,6 +99,9 @@
     @media (max-width: $max-width-sm) {
       width: 100%;
     }
+    @media (max-width: $max-width-xs) {
+      padding: 10px 80px 5px 80px;
+    }
 
     &:after {
       display: block;
@@ -77,6 +114,9 @@
 
       @media (max-width: $max-width-sm) {
         width: 333px;
+      }
+      @media (max-width: $max-width-xs) {
+          width: 100%;
       }
     }
   }
