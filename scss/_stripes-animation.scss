@@ -8,52 +8,56 @@ $stripe-lightgrey-color: lightgrey;
   width: 70vw;
 
   .bar {
+    animation-name: rev-stripe-color;
+    animation-duration: 2.9s;
+
     fill: $stripe-lightgrey-color;
     width: 0;
     height: 3px;
 
+
     &:nth-child(1) {
-      transition: width 2.5s ease 0.25s, fill 2s ease 1s;
+      transition: width 1.5s ease-out 0.25s;
     }
 
     &:nth-child(2) {
-      transition: width 2.5s ease 0.45s, fill 2s ease 1s;
+      transition: width 1.5s ease-out 0.45s;
     }
 
     &:nth-child(3) {
-      transition: width 2.5s ease, fill 2s ease 1s;
+      transition: width 1.5s ease-out;
     }
 
     &:nth-child(4) {
-      transition: width 2.5s ease 0.7s, fill 2s ease 1s;
+      transition: width 1.5s ease-out 0.7s;
     }
 
     &:nth-child(5) {
-      transition: width 2.5s ease 0.15s, fill 2s ease 1s;
+      transition: width 1.5s ease-out 0.15s;
     }
 
     &:nth-child(6) {
-      transition: width 2.5s ease 0.65s, fill 2s ease 1s;
+      transition: width 1.5s ease-out 0.65s;
     }
 
     &:nth-child(7) {
-      transition: width 2.5s ease 0.55s, fill 2s ease 1s;
+      transition: width 1.5s ease-out 0.55s;
     }
 
     &:nth-child(8) {
-      transition: width 2.5s ease 0.15s, fill 2s ease 1s;
+      transition: width 1.5s ease-out 0.15s;
     }
 
     &:nth-child(9) {
-      transition: width 2.5s ease 0.65s, fill 2s ease 1s;
+      transition: width 1.5s ease-out 0.65s;
     }
 
     &:nth-child(10) {
-      transition: width 2.5s ease 0.45s, fill 2s ease 1s;
+      transition: width 1.5s ease-out 0.45s;
     }
 
     &:nth-child(11) {
-      transition: width 2.5s ease 0.5s, fill 2s ease 1s;
+      transition: width 1.5s ease-out 0.5s;
     }
   }
 }
@@ -61,7 +65,9 @@ $stripe-lightgrey-color: lightgrey;
 .equilizer {
   &.visible .bar {
     width: 50vw;
-    fill: $stripe-green-color;
+    animation-name: stripe-color;
+    animation-duration: 2.5s;
+    fill: $second-blue;
   }
 }
 
@@ -73,8 +79,38 @@ $stripe-lightgrey-color: lightgrey;
   @media (max-width: $max-width-xs) {
     width: 100%;
   }
+}
 
-  & .visible .bar {
-    fill: red;
+@keyframes stripe-color {
+  0% {
+    fill: $main-blue;
+  }
+  10% {
+    fill: $main-blue;
+  }
+  40% {
+    fill: $hover-violet;
+  }
+  90% {
+    fill: $second-blue;
+  }
+  100% {
+    fill: $second-blue;
   }
 }
+
+@keyframes rev-stripe-color {
+  0% {
+    fill: $second-blue;
+  }
+  60% {
+    fill: $hover-violet;
+  }
+  90% {
+    fill: $main-blue;
+  }
+  100% {
+    fill: $main-blue;
+  }
+}
+
