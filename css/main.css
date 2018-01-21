@@ -28,35 +28,39 @@ h2 {
 .equilizer, .equilizer-right {
   width: 70vw; }
   .equilizer .bar, .equilizer-right .bar {
+    animation-name: rev-stripe-color;
+    animation-duration: 2.9s;
     fill: lightgrey;
     width: 0;
     height: 3px; }
     .equilizer .bar:nth-child(1), .equilizer-right .bar:nth-child(1) {
-      transition: width 2.5s ease 0.25s, fill 2s ease 1s; }
+      transition: width 1.5s ease-out 0.25s; }
     .equilizer .bar:nth-child(2), .equilizer-right .bar:nth-child(2) {
-      transition: width 2.5s ease 0.45s, fill 2s ease 1s; }
+      transition: width 1.5s ease-out 0.45s; }
     .equilizer .bar:nth-child(3), .equilizer-right .bar:nth-child(3) {
-      transition: width 2.5s ease, fill 2s ease 1s; }
+      transition: width 1.5s ease-out; }
     .equilizer .bar:nth-child(4), .equilizer-right .bar:nth-child(4) {
-      transition: width 2.5s ease 0.7s, fill 2s ease 1s; }
+      transition: width 1.5s ease-out 0.7s; }
     .equilizer .bar:nth-child(5), .equilizer-right .bar:nth-child(5) {
-      transition: width 2.5s ease 0.15s, fill 2s ease 1s; }
+      transition: width 1.5s ease-out 0.15s; }
     .equilizer .bar:nth-child(6), .equilizer-right .bar:nth-child(6) {
-      transition: width 2.5s ease 0.65s, fill 2s ease 1s; }
+      transition: width 1.5s ease-out 0.65s; }
     .equilizer .bar:nth-child(7), .equilizer-right .bar:nth-child(7) {
-      transition: width 2.5s ease 0.55s, fill 2s ease 1s; }
+      transition: width 1.5s ease-out 0.55s; }
     .equilizer .bar:nth-child(8), .equilizer-right .bar:nth-child(8) {
-      transition: width 2.5s ease 0.15s, fill 2s ease 1s; }
+      transition: width 1.5s ease-out 0.15s; }
     .equilizer .bar:nth-child(9), .equilizer-right .bar:nth-child(9) {
-      transition: width 2.5s ease 0.65s, fill 2s ease 1s; }
+      transition: width 1.5s ease-out 0.65s; }
     .equilizer .bar:nth-child(10), .equilizer-right .bar:nth-child(10) {
-      transition: width 2.5s ease 0.45s, fill 2s ease 1s; }
+      transition: width 1.5s ease-out 0.45s; }
     .equilizer .bar:nth-child(11), .equilizer-right .bar:nth-child(11) {
-      transition: width 2.5s ease 0.5s, fill 2s ease 1s; }
+      transition: width 1.5s ease-out 0.5s; }
 
 .equilizer.visible .bar, .visible.equilizer-right .bar {
   width: 50vw;
-  fill: #32cec0; }
+  animation-name: stripe-color;
+  animation-duration: 2.5s;
+  fill: #29d4be; }
 
 .equilizer-right {
   width: 50vw;
@@ -64,8 +68,28 @@ h2 {
   @media (max-width: 779px) {
     .equilizer-right {
       width: 100%; } }
-  .equilizer-right .visible .bar {
-    fill: red; }
+
+@keyframes stripe-color {
+  0% {
+    fill: #5454ff; }
+  10% {
+    fill: #5454ff; }
+  40% {
+    fill: #ab22d8; }
+  90% {
+    fill: #29d4be; }
+  100% {
+    fill: #29d4be; } }
+
+@keyframes rev-stripe-color {
+  0% {
+    fill: #29d4be; }
+  60% {
+    fill: #ab22d8; }
+  90% {
+    fill: #5454ff; }
+  100% {
+    fill: #5454ff; } }
 
 .navbar-default {
   background: #fff;
@@ -120,7 +144,13 @@ h2 {
   @media (max-width: 779px) {
     .first-section-img {
       padding: 20px;
-      width: 50%; } }
+      width: 50%;
+      transform: translate(0, 0); } }
+  @media (max-width: 320px) {
+    .first-section-img {
+      padding: 20px;
+      width: 85%;
+      transform: translate(0, 0); } }
 
 @media (max-width: 779px) {
   .second-section .row {
@@ -189,16 +219,38 @@ h2 {
     .section-subheader {
       padding: 20px 80px;
       text-align: center; } }
+  @media (max-width: 320px) {
+    .section-subheader {
+      padding: 20px 10px; } }
+
+@media (max-width: 479px) {
+  .hello-section {
+    margin-bottom: 20px; } }
 
 .hello-section .container {
   position: relative;
   z-index: 3; }
 
 .hello-section .hello-text {
-  padding: 90px 50px 25px 25px; }
+  padding: 90px 50px 25px 25px;
+  position: relative; }
   @media (max-width: 779px) {
     .hello-section .hello-text {
       padding: 35px 35px 25px 25px; } }
+  @media (max-width: 320px) {
+    .hello-section .hello-text {
+      padding: 0px 10px 25px 10px; } }
+  .hello-section .hello-text:after {
+    display: inline-block;
+    content: "";
+    border-top: 4px solid #5454ff;
+    width: 362px;
+    position: absolute;
+    bottom: 0;
+    right: 20px; }
+    @media (max-width: 779px) {
+      .hello-section .hello-text:after {
+        display: none; } }
 
 .hello-section .main-header {
   color: #5454ff;
@@ -210,28 +262,15 @@ h2 {
 
 .hello-section .main-subheader {
   font-size: 36px;
-  font-weight: 300; }
+  font-weight: 300;
+  font-size: 25px; }
   @media (max-width: 779px) {
     .hello-section .main-subheader {
       text-align: center;
       font-size: 22px; } }
-  .hello-section .main-subheader:after {
-    display: inline-block;
-    content: "";
-    border-top: 4px solid #5454ff;
-    width: 362px;
-    position: relative;
-    bottom: 0;
-    right: -420px; }
-    @media (max-width: 1199px) {
-      .hello-section .main-subheader:after {
-        right: -535px; } }
-    @media (max-width: 991px) {
-      .hello-section .main-subheader:after {
-        right: -320px; } }
-    @media (max-width: 779px) {
-      .hello-section .main-subheader:after {
-        display: none; } }
+  @media (max-width: 320px) {
+    .hello-section .main-subheader {
+      font-size: 16px; } }
 
 .hello-section .hello-section-dots {
   position: absolute;
@@ -244,6 +283,9 @@ h2 {
     .hello-section .hello-section-dots {
       width: 36%;
       right: 32%; } }
+  @media (max-width: 479px) {
+    .hello-section .hello-section-dots {
+      display: none; } }
 
 @media (max-width: 779px) {
   .who-we-are {
@@ -266,6 +308,9 @@ h2 {
     @media (max-width: 991px) {
       .who-we-are .our-images .image-box {
         margin-bottom: 60px; } }
+    @media (max-width: 479px) {
+      .who-we-are .our-images .image-box .image-box-img {
+        width: 80%; } }
 
 @media (max-width: 779px) {
   .who-we-are .who-we-are-list-container {
@@ -278,7 +323,7 @@ h2 {
   width: 390px;
   position: relative;
   bottom: -8px;
-  left: 23px; }
+  left: 0; }
   @media (max-width: 991px) {
     .who-we-are .who-we-are-list-container:after {
       width: 315px; } }
@@ -291,49 +336,47 @@ h2 {
 .who-we-are .who-we-are-list-title {
   text-transform: uppercase;
   color: #5454ff;
-  font-size: 20px;
-  padding-left: 25px; }
+  font-size: 20px; }
   @media (max-width: 779px) {
     .who-we-are .who-we-are-list-title {
       padding-left: 0; } }
 
-.who-we-are .who-we-are-text {
-  width: 70%;
-  padding-left: 25px; }
-  @media (max-width: 991px) {
-    .who-we-are .who-we-are-text {
-      width: 100%; } }
-  @media (max-width: 779px) {
-    .who-we-are .who-we-are-text {
-      padding: 10px 80px 5px 80px; } }
+@media (max-width: 779px) {
+  .who-we-are .who-we-are-text {
+    padding: 10px 80px 5px 80px; } }
 
 .who-we-are .our-strengths {
   text-transform: uppercase;
   color: #5454ff;
   font-size: 20px; }
 
-.who-we-are .who-we-are-subheader {
-  width: 70%; }
+@media (max-width: 779px) {
+  .who-we-are .who-we-are-subheader {
+    padding: 10px 80px 5px 80px; } }
+
+.who-we-are .who-we-are-subheader:after {
+  display: block;
+  content: "";
+  border-top: 5px solid #f0eeee;
+  width: 400px;
+  position: relative;
+  bottom: -20px;
+  left: 0; }
   @media (max-width: 991px) {
-    .who-we-are .who-we-are-subheader {
-      width: 100%; } }
+    .who-we-are .who-we-are-subheader:after {
+      width: 333px; } }
   @media (max-width: 779px) {
-    .who-we-are .who-we-are-subheader {
-      padding: 10px 80px 5px 80px; } }
-  .who-we-are .who-we-are-subheader:after {
-    display: block;
-    content: "";
-    border-top: 5px solid #f0eeee;
-    width: 400px;
-    position: relative;
-    bottom: -20px;
-    left: 0; }
-    @media (max-width: 991px) {
-      .who-we-are .who-we-are-subheader:after {
-        width: 333px; } }
-    @media (max-width: 779px) {
-      .who-we-are .who-we-are-subheader:after {
-        width: 100%; } }
+    .who-we-are .who-we-are-subheader:after {
+      width: 100%; } }
+
+.what-we-do {
+  padding: 0 50px 25px 25px; }
+  .what-we-do .we-do-title {
+    text-transform: uppercase;
+    color: #5454ff;
+    font-size: 20px; }
+  .what-we-do .text-center .section-header {
+    width: 330px; }
 
 .our-projects {
   background-color: #e3e3e3;
@@ -345,7 +388,7 @@ h2 {
   .our-projects .our-projects-section-dots {
     position: absolute;
     right: 300px;
-    top: -113px; }
+    top: 0; }
     @media (max-width: 1199px) {
       .our-projects .our-projects-section-dots {
         right: 140px; } }

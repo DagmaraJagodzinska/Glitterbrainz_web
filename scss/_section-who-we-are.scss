@@ -26,6 +26,12 @@
       @media (max-width: $max-width-sm) {
         margin-bottom: 60px;
       }
+
+      .image-box-img {
+        @media (max-width: $max-width-xxs) {
+          width: 80%;
+        }
+      }
     }
   }
 
@@ -40,7 +46,7 @@
       width: 390px;
       position: relative;
       bottom: -8px;
-      left: 23px;
+      left: 0;
       
       @media (max-width: $max-width-sm) {
           width: 315px;
@@ -57,7 +63,6 @@
     text-transform: uppercase;
     color: $main-blue;
     font-size: 20px;
-    padding-left: 25px;
     
     @media (max-width: $max-width-xs) {
       padding-left: 0;
@@ -75,13 +80,6 @@
   // }
 
   .who-we-are-text {
-    width: 70%;
-    padding-left: 25px;
-
-    @media (max-width: $max-width-sm) {
-      width: 100%;
-    }
-
     @media (max-width: $max-width-xs) {
       padding: 10px 80px 5px 80px;
     }
@@ -94,11 +92,6 @@
   }
 
   .who-we-are-subheader {
-    width: 70%;
-
-    @media (max-width: $max-width-sm) {
-      width: 100%;
-    }
     @media (max-width: $max-width-xs) {
       padding: 10px 80px 5px 80px;
     }

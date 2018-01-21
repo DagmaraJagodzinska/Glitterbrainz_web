@@ -19,6 +19,7 @@
 
 .first-section-img {
   padding-left: 140px;
+  // transform: translate(0,50%);
 
   @media (max-width: $max-width-st) {
     padding-left: 70px;
@@ -29,6 +30,12 @@
   @media (max-width: $max-width-xs) {
     padding: 20px;
     width: 50%;
+    transform: translate(0,0);
+  }
+  @media (max-width: 320px) {
+    padding: 20px;
+    width: 85%;
+    transform: translate(0,0);
   }
 }
 .second-section {
@@ -119,6 +126,9 @@
   @media (max-width: $max-width-xs) {
     padding: 20px 80px;
     text-align: center;
+  }
+  @media (max-width: 320px) {
+      padding: 20px 10px;
   }
 }
 
