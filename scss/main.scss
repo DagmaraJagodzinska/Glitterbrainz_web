@@ -21,6 +21,9 @@ body {
 
 header {
     margin-bottom: 50px;
+    @media (max-width: $max-width-xs) {
+        margin-bottom: 0;
+    }
 }
 
 section {

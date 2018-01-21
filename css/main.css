@@ -455,6 +455,9 @@ body {
 
 header {
   margin-bottom: 50px; }
+  @media (max-width: 779px) {
+    header {
+      margin-bottom: 0; } }
 
 section {
   margin-bottom: 50px; }
