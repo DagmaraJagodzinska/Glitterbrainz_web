@@ -94,13 +94,29 @@ h2 {
 .navbar-default {
   background: #fff;
   border: none; }
+  @media (max-width: 779px) {
+    .navbar-default .navbar-brand {
+      display: block;
+      float: none; }
+      .navbar-default .navbar-brand img {
+        margin: 0 auto; }
+    .navbar-default .navbar-nav {
+      text-align: center;
+      margin-top: 45px; } }
 
 .nav {
   margin: -32px -22px -25px 0; }
+  @media (max-width: 779px) {
+    .nav {
+      margin: 0; } }
   .nav .nav-item {
     text-decoration: none;
     text-transform: uppercase;
     padding-right: 45px; }
+    @media (max-width: 779px) {
+      .nav .nav-item {
+        display: inline-block;
+        padding: 0; } }
     .nav .nav-item .nav-item-link {
       color: #5454ff;
       letter-spacing: 0.1em; }
@@ -119,6 +135,10 @@ h2 {
     color: #ab22d8; }
   100% {
     color: #29d4be; } }
+
+@media (max-width: 779px) {
+  text-align: center;
+  margin-bottom: 10px; }
 
 .first-section {
   margin-bottom: 80px; }
