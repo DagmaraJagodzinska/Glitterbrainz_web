@@ -3,76 +3,63 @@ $stripe-green-color: #32cec0;
 $stripe-viol-color: #5254ff;
 $stripe-lightgreen-color: lightgreen;
 $stripe-lightgrey-color: lightgrey;
+$transition-time: 1s;
+$ease-step: 0.1s;
+$random-starts: (
+        rand-1: 1,
+        rand-2: 2,
+        rand-3: 0,
+        rand-4: 4,
+        rand-5: .8,
+        rand-6: 3,
+        rand-7: 2.2,
+        rand-8: 0.5,
+        rand-9: 3,
 
-.equilizer {
+);
+
+@mixin mobile-animation($chosen-media, $anima-time, $ease-single-time, $delay) {
+  @media (max-width: $chosen-media) {
+    animation-duration: $anima-time/4;
+    transition: width $anima-time/2 ease-out $ease-single-time*$delay;
+  }
+}
+
+.stripe {
   width: 70vw;
 
   .bar {
-    animation-name: rev-stripe-color;
-    animation-duration: 2.9s;
-
     fill: $stripe-lightgrey-color;
     width: 0;
-    height: 3px;
+    height: 5px;
 
-
-    &:nth-child(1) {
-      transition: width 1.5s ease-out 0.25s;
-    }
-
-    &:nth-child(2) {
-      transition: width 1.5s ease-out 0.45s;
-    }
-
-    &:nth-child(3) {
-      transition: width 1.5s ease-out;
-    }
-
-    &:nth-child(4) {
-      transition: width 1.5s ease-out 0.7s;
-    }
-
-    &:nth-child(5) {
-      transition: width 1.5s ease-out 0.15s;
-    }
-
-    &:nth-child(6) {
-      transition: width 1.5s ease-out 0.65s;
-    }
-
-    &:nth-child(7) {
-      transition: width 1.5s ease-out 0.55s;
-    }
-
-    &:nth-child(8) {
-      transition: width 1.5s ease-out 0.15s;
-    }
-
-    &:nth-child(9) {
-      transition: width 1.5s ease-out 0.65s;
-    }
-
-    &:nth-child(10) {
-      transition: width 1.5s ease-out 0.45s;
-    }
-
-    &:nth-child(11) {
-      transition: width 1.5s ease-out 0.5s;
+    @for $i from 1 through 9 {
+      &:nth-child(#{$i}) {
+        transition: width $transition-time ease-out $ease-step*(map-get($random-starts, rand-#{$i}));
+        @include mobile-animation ($max-width-xs, $transition-time, $ease-step, map-get($random-starts, rand-#{$i}) );
+      }
     }
   }
 }
 
-.equilizer {
+.stripe {
   &.visible .bar {
     width: 50vw;
     animation-name: stripe-color;
-    animation-duration: 2.5s;
+    animation-duration: $transition-time;
+
+    @for $j from 1 through 9 {
+      &:nth-child(#{$j}) {
+        animation-delay: $ease-step*map-get($random-starts , rand-#{$j});
+      }
+    }
+
     fill: $second-blue;
   }
 }
 
-.equilizer-right {
-  @extend .equilizer;
+.stripe-right {
+  @extend .stripe;
   width: 50vw;
   transform: rotate(180deg);
   
@@ -96,21 +83,6 @@ $stripe-lightgrey-color: lightgrey;
   }
   100% {
     fill: $second-blue;
-  }
-}
-
-@keyframes rev-stripe-color {
-  0% {
-    fill: $second-blue;
-  }
-  60% {
-    fill: $hover-violet;
-  }
-  90% {
-    fill: $main-blue;
-  }
-  100% {
-    fill: $main-blue;
   }
 }
 
