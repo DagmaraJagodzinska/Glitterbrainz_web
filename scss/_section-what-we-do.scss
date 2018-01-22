@@ -1,15 +1,44 @@
     
 .what-we-do {
-    padding: 0 50px 25px 25px;
+    // padding: 0 50px 25px 25px;
     .we-do-title {
     text-transform: uppercase;
     color: #5454ff;
     font-size: 20px;
+        @media (max-width: $max-width-xs) {
+            text-align: center;
+        }
     }
 
-    .text-center {
+    .we-do-content {
+        @media (max-width: $max-width-xs) {
+            text-align: center;
+        }   
+    }
+
+    .what-we-do-container {
+        padding-left: 40px;
+        @media (max-width: $max-width-xs) {
+            padding: 20px;
+        }
         .section-header {
             width: 330px;
+        }
+
+        .list-style {
+            list-style-type: square;
+            color: $main-blue;
+            padding-left: 15px;
+
+            @media (max-width: $max-width-xs) {
+                text-align: center;
+                font-weight: 600;
+                list-style-type: none;
+            }
+
+            span {
+            color: black;
+            }
         }
     }
 }

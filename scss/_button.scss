@@ -6,6 +6,9 @@
   font-size: $btn-font-size;
   text-transform: uppercase;
   font-weight: 300;
+  @media (max-width: $max-width-xs) {
+      margin-bottom: 20px;
+  }
 
   &:hover {
     background-color: $main-blue-hover;
