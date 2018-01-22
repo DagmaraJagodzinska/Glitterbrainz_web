@@ -27,7 +27,7 @@
         margin-bottom: 60px;
       }
 
-      .image-box-img {
+      .image-box-img:nth-child(even) {
         @media (max-width: $max-width-xxs) {
           width: 80%;
         }
