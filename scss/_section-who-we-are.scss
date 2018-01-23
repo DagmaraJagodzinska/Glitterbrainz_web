@@ -36,9 +36,12 @@
         margin-bottom: 60px;
       }
 
-      .image-box-img:nth-child(even) {
-        @media (max-width: $max-width-xxs) {
-          width: 80%;
+      .image-box-img {
+        @media (max-width: $max-width-xs) {
+          height: 220px;
+        }
+        @media (max-width: 320px) {
+          height: 180px;
         }
       }
     }

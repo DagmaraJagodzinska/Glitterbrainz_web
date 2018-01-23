@@ -3,7 +3,7 @@
   padding: 30px;
 
   .icons {
-    padding-left: 40px;
+    padding-left: 15px;
     
     @media (max-width: $max-width-xs) {
         text-align: center;
@@ -14,6 +14,15 @@
   .rights {
     @media (max-width: $max-width-xs) {
         text-align: center;
+    }
+  }
+
+  .icon {
+    padding-right: 15px;
+    opacity: 0.7;
+
+    &:hover {
+      opacity: 1;
     }
   }
 }

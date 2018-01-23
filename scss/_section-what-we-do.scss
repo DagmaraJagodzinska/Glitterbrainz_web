@@ -15,15 +15,18 @@
             text-align: center;
         }   
     }
+    .section-header {
+        width: 330px;
+        display: block;
+        margin: 0 auto;
+    }
 
     .what-we-do-container {
         padding-left: 40px;
         @media (max-width: $max-width-xs) {
             padding: 20px;
         }
-        .section-header {
-            width: 330px;
-        }
+
 
         .list-style {
             list-style-type: square;

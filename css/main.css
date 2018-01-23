@@ -201,7 +201,7 @@ h2 {
   text-align: center; }
 
 .first-section-img {
-  padding-left: 140px; }
+  padding-left: 105px; }
   @media (max-width: 1199px) {
     .first-section-img {
       padding-left: 70px; } }
@@ -279,7 +279,7 @@ h2 {
     display: inline-block;
     content: "";
     border-top: 5px solid #f0eeee;
-    width: 284px;
+    width: 285px;
     position: relative;
     bottom: 50px; }
     @media (max-width: 779px) {
@@ -393,9 +393,12 @@ h2 {
     @media (max-width: 991px) {
       .who-we-are .our-images .image-box {
         margin-bottom: 60px; } }
-    @media (max-width: 479px) {
-      .who-we-are .our-images .image-box .image-box-img:nth-child(even) {
-        width: 80%; } }
+    @media (max-width: 779px) {
+      .who-we-are .our-images .image-box .image-box-img {
+        height: 220px; } }
+    @media (max-width: 320px) {
+      .who-we-are .our-images .image-box .image-box-img {
+        height: 180px; } }
 
 @media (max-width: 779px) {
   .who-we-are .who-we-are-list-container {
@@ -434,13 +437,16 @@ h2 {
   .what-we-do .we-do-content {
     text-align: center; } }
 
+.what-we-do .section-header {
+  width: 330px;
+  display: block;
+  margin: 0 auto; }
+
 .what-we-do .what-we-do-container {
   padding-left: 40px; }
   @media (max-width: 779px) {
     .what-we-do .what-we-do-container {
       padding: 20px; } }
-  .what-we-do .what-we-do-container .section-header {
-    width: 330px; }
   .what-we-do .what-we-do-container .list-style {
     list-style-type: square;
     color: #5454ff;
@@ -480,7 +486,7 @@ h2 {
       display: block;
       content: "";
       border-top: 5px solid #fff;
-      width: 410px;
+      width: 285px;
       position: relative;
       bottom: -8px;
       margin: 0 auto; }
@@ -506,7 +512,7 @@ h2 {
   background-color: #e3e3e3;
   padding: 30px; }
   .footer .icons {
-    padding-left: 40px; }
+    padding-left: 15px; }
     @media (max-width: 779px) {
       .footer .icons {
         text-align: center;
@@ -514,6 +520,11 @@ h2 {
   @media (max-width: 779px) {
     .footer .rights {
       text-align: center; } }
+  .footer .icon {
+    padding-right: 15px;
+    opacity: 0.7; }
+    .footer .icon:hover {
+      opacity: 1; }
 
 body {
   margin: 0;
