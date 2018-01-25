@@ -58,7 +58,7 @@ $random-starts: (
   }
 
   @media (max-width: $max-width-xs) {
-    width: 100vw;
+    width: 100%;
 
     &.visible .bar {
       width: 100%;
@@ -72,7 +72,7 @@ $random-starts: (
   transform: rotate(180deg);
   
   @media (max-width: $max-width-xs) {
-    width: 100vw;
+    width: 100%;
   }
 }
 
