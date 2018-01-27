@@ -474,7 +474,8 @@ p {
     .what-we-do .what-we-do-container .list-style {
       list-style-type: square;
       color: #5454ff;
-      padding-left: 15px; }
+      padding-left: 15px;
+      font-size: 16px; }
       @media (max-width: 767px) {
         .what-we-do .what-we-do-container .list-style {
           text-align: center;
