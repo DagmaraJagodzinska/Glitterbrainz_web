@@ -1,5 +1,5 @@
 .first-section {
-  margin-bottom: 80px;
+    margin-bottom: 100px;
   
   @media (max-width: $max-width-xs) {
     margin-top: -80px;
@@ -46,6 +46,10 @@
   }
 }
 .second-section {
+  margin-bottom: 125px;
+  @media (max-width: $max-width-xs) {
+    margin-bottom: 25px;
+  }
   .row {
     @media (max-width: $max-width-xs) {
       display: flex;
@@ -74,8 +78,7 @@
 
   .stripes {
     @media (max-width: $max-width-xs) {
-      margin-top: -50px;
-      margin-bottom: 30px;
+      display: none;
     }
   }
 }

@@ -1,9 +1,11 @@
     
 .what-we-do {
+    background-color: $dark-grey;
+    padding: 50px 0;
     // padding: 0 50px 25px 25px;
     .we-do-title {
     text-transform: uppercase;
-    color: #5454ff;
+    color: $main-blue;
     font-size: 20px;
         @media (max-width: $max-width-xs) {
             text-align: center;
@@ -14,6 +16,9 @@
         @media (max-width: $max-width-xs) {
             text-align: center;
         }   
+        @media (max-width: 768px) {
+            padding-right: 30px;
+        }
     }
     .section-header {
         width: 330px;
@@ -27,6 +32,17 @@
             padding: 20px;
         }
 
+        .what-we-do-img {    
+            margin-bottom: 25px;
+            opacity: 0.7;
+        }
+
+        .what-we-do-content {
+            padding-right: 80px;
+            @media (max-width: $max-width-xs) {
+                padding-right: 0;
+            }
+        }
 
         .list-style {
             list-style-type: square;
