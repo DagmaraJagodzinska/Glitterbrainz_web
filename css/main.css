@@ -16,8 +16,8 @@ p {
 .is-blue {
   color: #5454ff; }
 
-.btn-blue-custom {
-  background-color: #5454ff;
+.btn-blue-custom, .btn-blue-second-custom {
+  background-color: #29d4be;
   border: none;
   border-radius: 0;
   padding: 10px 44px;
@@ -25,9 +25,21 @@ p {
   text-transform: uppercase;
   font-weight: 300; }
   @media (max-width: 767px) {
-    .btn-blue-custom {
+    .btn-blue-custom, .btn-blue-second-custom {
       margin-bottom: 20px; } }
-  .btn-blue-custom:hover {
+  .btn-blue-custom:hover, .btn-blue-second-custom:hover {
+    background-color: #27c4af;
+    color: #fff; }
+  .btn-blue-custom:active, .btn-blue-second-custom:active {
+    background-color: #27c4af; }
+
+.btn-blue-second-custom {
+  background-color: #5454ff;
+  font-size: 14px;
+  margin-top: 20px; }
+  .btn-blue-second-custom:active {
+    background-color: #2221d3; }
+  .btn-blue-second-custom:hover {
     background-color: #2221d3;
     color: #fff; }
 
@@ -439,7 +451,7 @@ p {
     padding: 10px 15px 5px 15px; } }
 
 .what-we-do {
-  background-color: #e7e7e7;
+  background-color: #efefef;
   padding: 50px 0; }
   .what-we-do .we-do-title {
     text-transform: uppercase;
@@ -485,7 +497,7 @@ p {
         color: black; }
 
 .our-projects {
-  background-color: #e7e7e7;
+  background-color: #efefef;
   padding: 60px;
   position: relative;
   margin-bottom: 0; }
@@ -538,7 +550,7 @@ p {
         padding: 25px 10px 25px 10px; } }
 
 .footer {
-  background-color: #e7e7e7;
+  background-color: #efefef;
   padding: 30px; }
   .footer .icons {
     padding-left: 15px; }

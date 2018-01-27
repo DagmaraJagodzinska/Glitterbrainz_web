@@ -1,5 +1,5 @@
 .btn-blue-custom {
-  background-color: $main-blue;
+  background-color: $second-blue;
   border: none;
   border-radius: 0;
   padding: 10px 44px;
@@ -11,7 +11,27 @@
   }
 
   &:hover {
-    background-color: $main-blue-hover;
+    background-color: $second-blue-hover;
     color: $white;
+  }
+
+  &:active {
+    background-color: $second-blue-hover;
+  }
+}
+
+.btn-blue-second-custom{
+  @extend .btn-blue-custom;
+  background-color: $main-blue;
+  font-size: 14px;
+  margin-top: 20px;
+
+    &:active {
+      background-color: $main-blue-hover;
+    }
+
+    &:hover {
+      background-color: $main-blue-hover;
+      color: $white;
   }
 }
