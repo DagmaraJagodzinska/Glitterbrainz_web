@@ -567,6 +567,164 @@ p {
     .footer .icon:hover {
       opacity: 1; }
 
+.container {
+  width: initial;
+  padding-left: 70px;
+  padding-right: 70px; }
+  @media (max-width: 1800px -1) {
+    .container {
+      padding-left: 70px;
+      padding-right: 70px; } }
+  @media (max-width: 1199px) {
+    .container {
+      padding-left: 40px;
+      padding-right: 40px; } }
+  @media (max-width: 991px) {
+    .container {
+      padding-left: 60px;
+      padding-right: 60px; } }
+  @media (max-width: 767px) {
+    .container {
+      padding-left: 30px;
+      padding-right: 30px; } }
+
+header .navbar .container {
+  padding: 0; }
+  header .navbar .container .container {
+    padding: 0; }
+    header .navbar .container .container .nav {
+      margin: 0 -22px -25px 0; }
+
+.first-section .container,
+.second-section .container,
+.third-section .container,
+.what-we-do .container,
+.who-we-are .container {
+  padding-left: 120px;
+  padding-right: 120px; }
+  @media (max-width: 1400px) {
+    .first-section .container,
+    .second-section .container,
+    .third-section .container,
+    .what-we-do .container,
+    .who-we-are .container {
+      padding-left: 70px;
+      padding-right: 70px; } }
+  @media (max-width: 991px) {
+    .first-section .container,
+    .second-section .container,
+    .third-section .container,
+    .what-we-do .container,
+    .who-we-are .container {
+      padding-left: 40px;
+      padding-right: 40px; } }
+  @media (max-width: 1400px) {
+    .first-section .container .section-text,
+    .second-section .container .section-text,
+    .third-section .container .section-text,
+    .what-we-do .container .section-text,
+    .who-we-are .container .section-text {
+      padding-left: 40px; } }
+  @media (max-width: 1023px) {
+    .first-section .container .section-text,
+    .second-section .container .section-text,
+    .third-section .container .section-text,
+    .what-we-do .container .section-text,
+    .who-we-are .container .section-text {
+      padding-left: 10px; } }
+
+.hello-section .hello-text {
+  padding: 90px 200px 25px 200px;
+  position: relative; }
+  @media (max-width: 1400px) {
+    .hello-section .hello-text {
+      padding: 90px 100px 25px 100px; } }
+  @media (max-width: 991px) {
+    .hello-section .hello-text {
+      padding: 90px 5px 25px 50px; } }
+  @media (max-width: 767px) {
+    .hello-section .hello-text {
+      padding: 35px 35px 25px 25px; } }
+  @media (max-width: 320px) {
+    .hello-section .hello-text {
+      padding: 0px 10px 10px 10px; } }
+
+.hello-section .hello-section-dots {
+  display: none; }
+
+.first-section .first-section-img {
+  padding: 0;
+  margin-left: -50px; }
+  @media (max-width: 1023px) {
+    .first-section .first-section-img {
+      margin-top: 60px; } }
+  @media (max-width: 767px) {
+    .first-section .first-section-img {
+      margin-top: 10px; } }
+
+.first-section .section-subheader {
+  width: 80%; }
+  @media (max-width: 767px) {
+    .first-section .section-subheader {
+      width: 100%; } }
+
+.second-section .second-section-img-container {
+  text-align: center; }
+  @media (max-width: 1023px) {
+    .second-section .second-section-img-container .second-section-img {
+      width: 70%;
+      margin-top: 50px; } }
+  @media (max-width: 767px) {
+    .second-section .second-section-img-container .second-section-img {
+      width: 40%;
+      margin-top: 10px; } }
+
+.second-section .section-text {
+  padding-left: 0;
+  padding-right: 0;
+  width: 80%; }
+  @media (max-width: 767px) {
+    .second-section .section-text {
+      width: 100%; } }
+
+.third-section .section-subheader {
+  width: 80%; }
+  @media (max-width: 767px) {
+    .third-section .section-subheader {
+      width: 100%; } }
+
+.what-we-do {
+  padding: 0 0 60px; }
+  .what-we-do .what-we-do-container {
+    padding-left: 80px; }
+    @media (max-width: 1400px) {
+      .what-we-do .what-we-do-container {
+        padding-left: 40px; } }
+    @media (max-width: 767px) {
+      .what-we-do .what-we-do-container {
+        text-align: center; } }
+  @media (max-width: 767px) {
+    .what-we-do .we-do-content {
+      padding-right: 0; } }
+
+.our-projects .our-projects-section-dots {
+  display: none; }
+
+.who-we-are .who-we-are-list-container {
+  padding: 0 80px; }
+  @media (max-width: 1400px) {
+    .who-we-are .who-we-are-list-container {
+      padding-left: 40px; } }
+  @media (max-width: 767px) {
+    .who-we-are .who-we-are-list-container {
+      padding: 20px; } }
+
+.who-we-are .who-we-are-subheader {
+  padding-right: 80px; }
+  @media (max-width: 767px) {
+    .who-we-are .who-we-are-subheader {
+      padding: 20px; } }
+
 body {
   margin: 0;
   background-color: #fff;
