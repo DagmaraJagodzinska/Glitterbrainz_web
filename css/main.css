@@ -23,15 +23,19 @@ p {
   padding: 10px 44px;
   font-size: 20px;
   text-transform: uppercase;
-  font-weight: 300; }
+  font-weight: 300;
+  color: #fff; }
   @media (max-width: 767px) {
     .btn-blue-custom, .btn-blue-second-custom {
       margin-bottom: 20px; } }
-  .btn-blue-custom:hover, .btn-blue-second-custom:hover {
+  .btn-blue-custom:hover, .btn-blue-second-custom:hover, .btn-blue-custom:focus, .btn-blue-second-custom:focus {
     background-color: #27c4af;
     color: #fff; }
   .btn-blue-custom:active, .btn-blue-second-custom:active {
-    background-color: #27c4af; }
+    background-color: #27c4af;
+    border-color: transparent;
+    color: white;
+    box-shadow: none; }
 
 .btn-blue-second-custom {
   background-color: #5454ff;
@@ -450,52 +454,6 @@ p {
   .who-we-are .who-we-are-subheader {
     padding: 10px 15px 5px 15px; } }
 
-.what-we-do {
-  background-color: #efefef;
-  padding: 50px 0; }
-  .what-we-do .we-do-title {
-    text-transform: uppercase;
-    color: #5454ff;
-    font-size: 20px; }
-    @media (max-width: 767px) {
-      .what-we-do .we-do-title {
-        text-align: center; } }
-  @media (max-width: 767px) {
-    .what-we-do .we-do-content {
-      text-align: center; } }
-  @media (max-width: 768px) {
-    .what-we-do .we-do-content {
-      padding-right: 30px; } }
-  .what-we-do .section-header {
-    width: 330px;
-    display: block;
-    margin: 0 auto; }
-  .what-we-do .what-we-do-container {
-    padding-left: 40px; }
-    @media (max-width: 767px) {
-      .what-we-do .what-we-do-container {
-        padding: 20px; } }
-    .what-we-do .what-we-do-container .what-we-do-img {
-      margin-bottom: 25px;
-      opacity: 0.7; }
-    .what-we-do .what-we-do-container .what-we-do-content {
-      padding-right: 80px; }
-      @media (max-width: 767px) {
-        .what-we-do .what-we-do-container .what-we-do-content {
-          padding-right: 0; } }
-    .what-we-do .what-we-do-container .list-style {
-      list-style-type: square;
-      color: #5454ff;
-      padding-left: 15px;
-      font-size: 16px; }
-      @media (max-width: 767px) {
-        .what-we-do .what-we-do-container .list-style {
-          text-align: center;
-          font-weight: 600;
-          list-style-type: none; } }
-      .what-we-do .what-we-do-container .list-style span {
-        color: black; }
-
 .our-projects {
   background-color: #efefef;
   padding: 60px;
@@ -650,7 +608,7 @@ header .navbar .container {
       padding: 0px 10px 10px 10px; } }
 
 .hello-section .hello-section-dots {
-  display: none; }
+  right: 90px; }
 
 .first-section .first-section-img {
   padding: 0;
@@ -672,11 +630,9 @@ header .navbar .container {
   text-align: center; }
   @media (max-width: 1023px) {
     .second-section .second-section-img-container .second-section-img {
-      width: 70%;
       margin-top: 50px; } }
   @media (max-width: 767px) {
     .second-section .second-section-img-container .second-section-img {
-      width: 40%;
       margin-top: 10px; } }
 
 .second-section .section-text {
@@ -710,8 +666,16 @@ header .navbar .container {
       .what-we-do .we-do-content {
         padding-right: 0; } }
 
-.our-projects .our-projects-section-dots {
-  display: none; }
+.our-projects {
+  margin-bottom: 50px; }
+  .our-projects .our-projects-section-dots {
+    display: none; }
+  @media (max-width: 479px) {
+    .our-projects .our-projects-subheader {
+      padding: 40px 0; } }
+  .our-projects a.mailto:hover, .our-projects a.mailto:active, .our-projects a.mailto:focus {
+    color: #29d4be;
+    text-decoration: none; }
 
 .who-we-are .who-we-are-list-container {
   padding: 0 80px; }

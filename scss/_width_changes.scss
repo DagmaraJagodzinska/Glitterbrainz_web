@@ -85,7 +85,7 @@ header {
     }
   }
   .hello-section-dots {
-      display: none;
+        right: 90px;
   }
 }
 
@@ -114,11 +114,9 @@ header {
         text-align: center;
         .second-section-img {
             @media (max-width: $max-width-md) {
-                width: 70%;
                 margin-top: 50px;
             }
             @media (max-width: $max-width-xs) {
-                width: 40%;
                 margin-top: 10px;
             }
         }
@@ -163,8 +161,22 @@ header {
 }
 
 .our-projects {
+    margin-bottom: 50px;
     .our-projects-section-dots {
         display: none;
+    }
+    .our-projects-subheader {
+        @media (max-width: $max-width-xxs) {
+            padding: 40px 0;
+        }
+    }
+    a.mailto {
+        &:hover,
+        &:active,
+        &:focus {
+            color: $second-blue;
+            text-decoration: none;
+        } 
     }
 }
 
@@ -178,7 +190,7 @@ header {
             padding: 20px;
         }
     }
-    .who-we-are-subheader{
+    .who-we-are-subheader {
         padding-right: 80px;
         @media (max-width: $max-width-xs) {  
             padding: 20px;

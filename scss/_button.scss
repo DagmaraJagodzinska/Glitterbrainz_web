@@ -6,17 +6,21 @@
   font-size: $btn-font-size;
   text-transform: uppercase;
   font-weight: 300;
+  color: $white;
   @media (max-width: $max-width-xs) {
       margin-bottom: 20px;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $second-blue-hover;
     color: $white;
   }
-
   &:active {
     background-color: $second-blue-hover;
+    border-color: transparent;
+    color: white;
+    box-shadow: none;
   }
 }
 
