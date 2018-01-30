@@ -183,7 +183,7 @@ p {
       color: #5454ff;
       letter-spacing: 0.1em; }
 
-.navbar-default .navbar-nav > li > a:hover {
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
   color: #29d4be; }
 
 .change-color:hover {
@@ -703,9 +703,12 @@ header .navbar .container {
     @media (max-width: 767px) {
       .what-we-do .what-we-do-container {
         text-align: center; } }
-  @media (max-width: 767px) {
-    .what-we-do .we-do-content {
-      padding-right: 0; } }
+  .what-we-do .we-do-content {
+    width: 80%;
+    padding-right: 0; }
+    @media (max-width: 767px) {
+      .what-we-do .we-do-content {
+        padding-right: 0; } }
 
 .our-projects .our-projects-section-dots {
   display: none; }

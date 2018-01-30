@@ -154,9 +154,11 @@ header {
         }
     }
     .we-do-content {
-     @media (max-width: $max-width-xs) {    
+        width: 80%;
         padding-right: 0;
-     }
+        @media (max-width: $max-width-xs) {    
+            padding-right: 0;
+        }
     }
 }
 

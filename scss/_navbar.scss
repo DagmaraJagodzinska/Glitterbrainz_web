@@ -40,8 +40,11 @@
 }
 
 // NAV COLOR HOVER ANIMATION
-.navbar-default .navbar-nav>li>a:hover {
-  color: $second-blue;
+.navbar-default .navbar-nav>li>a{
+  &:hover,
+  &:focus {
+    color: $second-blue;
+  }
 }
 
 .change-color:hover {
