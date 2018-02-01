@@ -8,10 +8,11 @@ h2 {
   font-size: 67px; }
 
 p {
-  font-size: 16px; }
+  font-size: 16px;
+  font-weight: 300; }
 
 .is-bold {
-  font-weight: 700; }
+  font-weight: 500; }
 
 .is-blue {
   color: #5454ff; }
@@ -169,6 +170,12 @@ p {
     .navbar-default .navbar-nav {
       text-align: center;
       margin-top: 45px; } }
+  @media (max-width: 767px) and (max-width: 767px) {
+    .navbar-default .navbar-nav {
+      margin-top: 53px; } }
+  @media (max-width: 767px) and (max-width: 320px) {
+    .navbar-default .navbar-nav {
+      font-size: 13px; } }
 
 .nav {
   margin: -32px -22px -25px 0; }
@@ -320,6 +327,7 @@ p {
         margin: 0 auto; } }
 
 .section-subheader {
+  font-weight: 300;
   margin-top: -50px; }
   @media (max-width: 767px) {
     .section-subheader {
@@ -338,11 +346,20 @@ p {
   z-index: 3; }
 
 .hello-section .hello-text {
-  padding: 90px 50px 25px 25px;
+  padding: 90px 200px 25px 200px;
   position: relative; }
+  @media (max-width: 1400px) {
+    .hello-section .hello-text {
+      padding: 90px 100px 25px 100px; } }
+  @media (max-width: 991px) {
+    .hello-section .hello-text {
+      padding: 40px 5px 25px 50px; } }
   @media (max-width: 767px) {
     .hello-section .hello-text {
       padding: 35px 35px 25px 25px; } }
+  @media (max-width: 479px) {
+    .hello-section .hello-text {
+      padding: 5px; } }
   @media (max-width: 320px) {
     .hello-section .hello-text {
       padding: 0px 10px 10px 10px; } }
@@ -416,7 +433,7 @@ p {
   padding-bottom: 70px; }
   @media (max-width: 767px) {
     .who-we-are .our-images {
-      padding-bottom: 20px; } }
+      padding-bottom: 0; } }
   .who-we-are .our-images .image-box {
     text-align: center; }
     @media (max-width: 991px) {
@@ -424,14 +441,17 @@ p {
         margin-bottom: 60px; } }
     @media (max-width: 767px) {
       .who-we-are .our-images .image-box .image-box-img {
-        height: 220px; } }
+        height: 200px; } }
+    @media (max-width: 479px) {
+      .who-we-are .our-images .image-box .image-box-img {
+        height: 175px; } }
     @media (max-width: 320px) {
       .who-we-are .our-images .image-box .image-box-img {
         height: 180px; } }
 
 @media (max-width: 767px) {
   .who-we-are .who-we-are-list-container {
-    margin-bottom: 40px; } }
+    margin-bottom: 0; } }
 
 .who-we-are .who-we-are-list-title {
   text-transform: uppercase;
@@ -443,7 +463,11 @@ p {
 
 @media (max-width: 767px) {
   .who-we-are .who-we-are-text {
-    padding: 10px 15px 5px 15px; } }
+    padding: 0 15px 5px 15px; } }
+
+@media (max-width: 479px) {
+  .who-we-are .who-we-are-text {
+    padding: 0 0 7px 0; } }
 
 .who-we-are .our-strengths {
   text-transform: uppercase;
@@ -491,7 +515,7 @@ p {
       margin: 0 auto; }
       @media (max-width: 767px) {
         .our-projects .section-header:after {
-          width: 85%; } }
+          width: 284px; } }
       @media (max-width: 320px) {
         .our-projects .section-header:after {
           width: 140px; } }
@@ -545,6 +569,10 @@ p {
     .container {
       padding-left: 30px;
       padding-right: 30px; } }
+  @media (max-width: 479px) {
+    .container {
+      padding-left: 15px;
+      padding-right: 15px; } }
 
 header .navbar .container {
   padding: 0; }
@@ -576,6 +604,14 @@ header .navbar .container {
     .who-we-are .container {
       padding-left: 40px;
       padding-right: 40px; } }
+  @media (max-width: 479px) {
+    .first-section .container,
+    .second-section .container,
+    .third-section .container,
+    .what-we-do .container,
+    .who-we-are .container {
+      padding-left: 25px;
+      padding-right: 25px; } }
   @media (max-width: 1400px) {
     .first-section .container .section-text,
     .second-section .container .section-text,
@@ -590,25 +626,20 @@ header .navbar .container {
     .what-we-do .container .section-text,
     .who-we-are .container .section-text {
       padding-left: 10px; } }
-
-.hello-section .hello-text {
-  padding: 90px 200px 25px 200px;
-  position: relative; }
-  @media (max-width: 1400px) {
-    .hello-section .hello-text {
-      padding: 90px 100px 25px 100px; } }
-  @media (max-width: 991px) {
-    .hello-section .hello-text {
-      padding: 90px 5px 25px 50px; } }
   @media (max-width: 767px) {
-    .hello-section .hello-text {
-      padding: 35px 35px 25px 25px; } }
-  @media (max-width: 320px) {
-    .hello-section .hello-text {
-      padding: 0px 10px 10px 10px; } }
-
-.hello-section .hello-section-dots {
-  right: 90px; }
+    .first-section .container .section-text,
+    .second-section .container .section-text,
+    .third-section .container .section-text,
+    .what-we-do .container .section-text,
+    .who-we-are .container .section-text {
+      padding-left: 0; } }
+  @media (max-width: 767px) {
+    .first-section .container .section-header,
+    .second-section .container .section-header,
+    .third-section .container .section-header,
+    .what-we-do .container .section-header,
+    .who-we-are .container .section-header {
+      width: initial; } }
 
 .first-section .first-section-img {
   padding: 0;
@@ -616,15 +647,30 @@ header .navbar .container {
   @media (max-width: 1023px) {
     .first-section .first-section-img {
       margin-top: 60px; } }
+  @media (max-width: 991px) {
+    .first-section .first-section-img {
+      transform: translate(0, 50%);
+      margin-top: 0; } }
   @media (max-width: 767px) {
     .first-section .first-section-img {
-      margin-top: 10px; } }
+      margin-top: 10px;
+      transform: translate(0, 0); } }
+  @media (max-width: 479px) {
+    .first-section .first-section-img {
+      margin: 10px 0 auto; } }
+  @media (width: 768px) {
+    .first-section .first-section-img {
+      transform: translate(0, 50%);
+      margin-top: 0; } }
 
 .first-section .section-subheader {
   width: 80%; }
   @media (max-width: 767px) {
     .first-section .section-subheader {
       width: 100%; } }
+  @media (max-width: 767px) {
+    .first-section .section-subheader {
+      padding: 50px 0 10px; } }
 
 .second-section .second-section-img-container {
   text-align: center; }
@@ -634,6 +680,9 @@ header .navbar .container {
   @media (max-width: 767px) {
     .second-section .second-section-img-container .second-section-img {
       margin-top: 10px; } }
+  @media (max-width: 767px) {
+    .second-section .second-section-img-container .second-section-img {
+      width: 75%; } }
 
 .second-section .section-text {
   padding-left: 0;
@@ -648,6 +697,26 @@ header .navbar .container {
   @media (max-width: 767px) {
     .third-section .section-subheader {
       width: 100%; } }
+
+@media (max-width: 991px) {
+  .third-section .first-section-img {
+    padding-left: 0;
+    transform: translate(0, 25%); } }
+
+@media (max-width: 767px) {
+  .third-section .first-section-img {
+    padding-left: 0;
+    transform: translate(0, 0); } }
+
+@media (max-width: 479px) {
+  .third-section .first-section-img {
+    margin: 0 auto;
+    width: 80%; } }
+
+@media (width: 768px) {
+  .third-section .first-section-img {
+    padding-left: 0;
+    transform: translate(0, 25%); } }
 
 .what-we-do {
   padding: 0 0 60px; }
@@ -672,7 +741,7 @@ header .navbar .container {
     display: none; }
   @media (max-width: 479px) {
     .our-projects .our-projects-subheader {
-      padding: 40px 0; } }
+      padding: 20px 0; } }
   .our-projects a.mailto:hover, .our-projects a.mailto:active, .our-projects a.mailto:focus {
     color: #29d4be;
     text-decoration: none; }
@@ -682,15 +751,31 @@ header .navbar .container {
   @media (max-width: 1400px) {
     .who-we-are .who-we-are-list-container {
       padding-left: 40px; } }
+  @media (max-width: 991px) {
+    .who-we-are .who-we-are-list-container {
+      padding: 0 20px 0 40px; } }
   @media (max-width: 767px) {
     .who-we-are .who-we-are-list-container {
       padding: 20px; } }
+  @media (max-width: 320px) {
+    .who-we-are .who-we-are-list-container {
+      padding: 10px; } }
 
 .who-we-are .who-we-are-subheader {
   padding-right: 80px; }
+  @media (max-width: 991px) {
+    .who-we-are .who-we-are-subheader {
+      padding-right: 20px; } }
   @media (max-width: 767px) {
     .who-we-are .who-we-are-subheader {
-      padding: 20px; } }
+      padding: 0 20px; } }
+  @media (max-width: 479px) {
+    .who-we-are .who-we-are-subheader {
+      padding: 0; } }
+
+@media (max-width: 767px) {
+  .stripes-second {
+    margin-bottom: 10px; } }
 
 body {
   margin: 0;

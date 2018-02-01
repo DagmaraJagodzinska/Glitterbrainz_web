@@ -7,16 +7,25 @@
     z-index: 3;
   }
 
-  .hello-text {
-    padding: 90px 50px 25px 25px;
-    position: relative;
+    .hello-text {
+      padding: 90px 200px 25px 200px;
+      position: relative;
 
-    @media (max-width: $max-width-xs) {
-      padding: 35px 35px 25px 25px;
-    }
-    @media (max-width: 320px) {
-        padding: 0px 10px 10px 10px;
-    }
+      @media (max-width: 1400px) {
+        padding: 90px 100px 25px 100px;
+      }
+      @media (max-width: $max-width-sm) {
+          padding: 40px 5px 25px 50px;
+      }
+      @media (max-width: $max-width-xs) {
+        padding: 35px 35px 25px 25px;
+      }
+      @media (max-width: $max-width-xxs) {
+        padding: 5px;
+      }
+      @media (max-width: 320px) {
+          padding: 0px 10px 10px 10px;
+      }
 
     &:after {
       display: inline-block;

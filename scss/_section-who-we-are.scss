@@ -26,7 +26,7 @@
     padding-bottom: 70px;
 
     @media (max-width: $max-width-xs) {
-        padding-bottom: 20px;
+        padding-bottom: 0;
     }
 
     .image-box {
@@ -38,7 +38,10 @@
 
       .image-box-img {
         @media (max-width: $max-width-xs) {
-          height: 220px;
+          height: 200px;
+        }
+        @media (max-width: $max-width-xxs) {
+          height: 175px;
         }
         @media (max-width: 320px) {
           height: 180px;
@@ -49,7 +52,7 @@
 
   .who-we-are-list-container {
     @media (max-width: $max-width-xs) {
-        margin-bottom: 40px;
+        margin-bottom: 0;
     }
   }
 
@@ -65,7 +68,10 @@
 
   .who-we-are-text {
     @media (max-width: $max-width-xs) {
-      padding: 10px 15px 5px 15px;
+      padding: 0 15px 5px 15px;
+    }
+    @media (max-width: $max-width-xxs) {
+      padding: 0 0 7px 0;
     }
   }
 

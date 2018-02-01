@@ -45,6 +45,7 @@
     transform: translate(0,0);
   }
 }
+
 .second-section {
   margin-bottom: 125px;
   @media (max-width: $max-width-xs) {
@@ -144,6 +145,7 @@
 }
 
 .section-subheader {
+  font-weight: 300;
   margin-top: -50px;
 
   @media (max-width: $max-width-xs) {
@@ -154,9 +156,3 @@
      padding: 50px 10px 10px;
   }
 }
-
-// .second-section {
-//     .stripes {
-//         padding: 80px;
-//     }
-// }

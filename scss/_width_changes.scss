@@ -19,6 +19,10 @@
         padding-left: 30px;
         padding-right: 30px;
     }
+    @media (max-width: $max-width-xxs) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 
 header {
@@ -53,6 +57,10 @@ header {
             padding-left: 40px;
             padding-right: 40px;
         }
+        @media (max-width: $max-width-xxs ) {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
 
         .section-text {
             @media (max-width: 1400px) {
@@ -61,32 +69,17 @@ header {
             @media (max-width: $max-width-md) {
                 padding-left: 10px;
             }
+            @media (max-width: $max-width-xs) {
+                padding-left: 0;
+            }
+        }
+
+        .section-header {
+            @media (max-width: $max-width-xs) {
+                width: initial;
+            }
         }
     }
-}
-
-.hello-section {
-  .hello-text {
-    padding: 90px 200px 25px 200px;
-    position: relative;
-
-    @media (max-width: 1400px) {
-      padding: 90px 100px 25px 100px;
-    }
-    @media (max-width: $max-width-sm) {
-        padding: 90px 5px 25px 50px;
-    }
-
-    @media (max-width: $max-width-xs) {
-      padding: 35px 35px 25px 25px;
-    }
-    @media (max-width: 320px) {
-        padding: 0px 10px 10px 10px;
-    }
-  }
-  .hello-section-dots {
-        right: 90px;
-  }
 }
 
 .first-section {
@@ -97,14 +90,29 @@ header {
         @media (max-width: $max-width-md) {
             margin-top: 60px;
         }
+        @media (max-width: $max-width-sm) {
+            transform: translate(0, 50%);
+            margin-top: 0;
+        }
         @media (max-width: $max-width-xs) {
             margin-top: 10px;
+            transform: translate(0, 0);
+        }
+        @media (max-width: $max-width-xxs) {
+            margin: 10px 0 auto;
+        }
+        @media (width: 768px) {
+            transform: translate(0, 50%);
+            margin-top: 0;
         }
     }
     .section-subheader {
         width: 80%;
         @media (max-width: $max-width-xs) {
             width: 100%;
+        }
+        @media (max-width: $max-width-xs) {
+            padding: 50px 0 10px;
         }
     }
 }
@@ -118,6 +126,9 @@ header {
             }
             @media (max-width: $max-width-xs) {
                 margin-top: 10px;
+            }
+            @media (max-width: $max-width-xs) {
+                width: 75%;
             }
         }
     }
@@ -136,6 +147,25 @@ header {
         width: 80%;
         @media (max-width: $max-width-xs) {
             width: 100%;
+        }
+    }
+
+    .first-section-img {
+        @media (max-width: $max-width-sm) {
+            padding-left: 0;
+            transform: translate(0, 25%);
+        }
+        @media (max-width: $max-width-xs) {
+            padding-left: 0;
+            transform: translate(0, 0);
+        }
+        @media (max-width: $max-width-xxs) {
+            margin: 0 auto;
+            width: 80%;
+        }
+        @media (width: 768px) {
+            padding-left: 0;
+            transform: translate(0, 25%);
         }
     }
 }
@@ -167,7 +197,7 @@ header {
     }
     .our-projects-subheader {
         @media (max-width: $max-width-xxs) {
-            padding: 40px 0;
+            padding: 20px 0;
         }
     }
     a.mailto {
@@ -186,15 +216,33 @@ header {
         @media (max-width: 1400px) {
             padding-left: 40px;
         }
+        @media (max-width: $max-width-sm) {  
+            padding: 0 20px 0 40px;
+        }        
         @media (max-width: $max-width-xs) {  
             padding: 20px;
+        }
+        @media (max-width: 320px) {  
+            padding: 10px;
         }
     }
     .who-we-are-subheader {
         padding-right: 80px;
+        @media (max-width: $max-width-sm) {  
+            padding-right: 20px;
+        }  
         @media (max-width: $max-width-xs) {  
-            padding: 20px;
+            padding: 0 20px;
         }
+        @media (max-width: $max-width-xxs) {
+            padding: 0;
+        }
+    }
+}
+
+.stripes-second {
+    @media (max-width: $max-width-xs) {  
+       margin-bottom: 10px;
     }
 }
 
