@@ -18,14 +18,10 @@
 }
 
 .first-section-img {
-  padding-left: 50px;
-
   @media (max-width: $max-width-st) {
-    padding-left: 70px;
     width: 100%;
   }
   @media (max-width: $max-width-md) {
-    padding-left: 70px;
     width: 100%;
   }
   @media (max-width: $max-width-sm) {

@@ -72,7 +72,7 @@
   font-style: normal;
 }
 
-$Roboto: 'robotoregular', sans-serif;
+$Roboto: 'robotolight', sans-serif;
 $Oswald: 'oswaldregular', sans-serif;
 
 $btn-font-size: 20px;
@@ -94,13 +94,16 @@ h2 {
 
 p {
   font-size: 17px;
-  font-weight: 300;
 
   @media (max-width: $max-width-xs) {
     font-size: 16px;
   }
 }
 
-.is-bold {
-  font-weight: 500;
+.is-bold-roboto {
+  font-family: 'robotomedium', sans-serif;
+}
+
+.is-bold-oswald {
+  font-family: 'oswaldmedium', sans-serif;
 }

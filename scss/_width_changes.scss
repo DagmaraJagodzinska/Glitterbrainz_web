@@ -139,7 +139,7 @@ header {
                 width: 55%;
             }
             @media (max-width: $max-width-xxs) {
-                width: 75%;
+                width: 85%;
             }
         }
     }
@@ -181,7 +181,8 @@ header {
         }
         @media (max-width: $max-width-xxs) {
             margin: 0 auto;
-            width: 80%;
+            width: 85%;
+            padding: 0;
         }
         @media (width: 768px) {
             padding-left: 0;
