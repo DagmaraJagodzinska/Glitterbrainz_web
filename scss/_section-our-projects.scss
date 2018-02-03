@@ -17,14 +17,20 @@
 
   .our-projects-section-dots {
     position: absolute;
-    right: 300px;
-    top: 0;
-
+    right: 90px;
+    top: -115px;
+    
     @media (max-width: $max-width-st) {
-      right: 140px;
+      right: 55px;
+    }
+    @media (max-width: $max-width-sm) {
+      right: 70px;
     }
     @media (max-width: $max-width-xs) {
-      display: none;
+        display: none;
+    }
+    @media (max-width: $max-width-xxs) {
+        display: none;
     }
   }
 

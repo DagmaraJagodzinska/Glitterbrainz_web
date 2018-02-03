@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Oswald', sans-serif;
+  src: url("fonts/Oswald/Oswald-Light.ttf"); }
+
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: url("fonts/Roboto/Roboto-Medium.ttf"); }
+
 .main-header,
 .section-header,
 .who-we-are-list-title,
@@ -8,8 +16,11 @@ h2 {
   font-size: 67px; }
 
 p {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 300; }
+  @media (max-width: 767px) {
+    p {
+      font-size: 16px; } }
 
 .is-bold {
   font-weight: 500; }
@@ -255,6 +266,9 @@ p {
 
 .second-section {
   margin-bottom: 125px; }
+  @media (max-width: 991px) {
+    .second-section {
+      margin-bottom: 50px; } }
   @media (max-width: 767px) {
     .second-section {
       margin-bottom: 25px; } }
@@ -397,11 +411,14 @@ p {
 
 .hello-section .hello-section-dots {
   position: absolute;
-  right: 400px;
+  right: 90px;
   top: 80px; }
   @media (max-width: 1199px) {
     .hello-section .hello-section-dots {
-      right: 135px; } }
+      right: 55px; } }
+  @media (max-width: 991px) {
+    .hello-section .hello-section-dots {
+      right: 70px; } }
   @media (max-width: 767px) {
     .hello-section .hello-section-dots {
       display: none; } }
@@ -494,12 +511,18 @@ p {
         width: initial; } }
   .our-projects .our-projects-section-dots {
     position: absolute;
-    right: 300px;
-    top: 0; }
+    right: 90px;
+    top: -115px; }
     @media (max-width: 1199px) {
       .our-projects .our-projects-section-dots {
-        right: 140px; } }
+        right: 55px; } }
+    @media (max-width: 991px) {
+      .our-projects .our-projects-section-dots {
+        right: 70px; } }
     @media (max-width: 767px) {
+      .our-projects .our-projects-section-dots {
+        display: none; } }
+    @media (max-width: 479px) {
       .our-projects .our-projects-section-dots {
         display: none; } }
   .our-projects .section-header {
@@ -665,10 +688,16 @@ header .navbar .container {
 
 .first-section .section-subheader {
   width: 80%; }
+  @media (max-width: 991px) {
+    .first-section .section-subheader {
+      width: 90%; } }
   @media (max-width: 767px) {
     .first-section .section-subheader {
       width: 100%; } }
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
+    .first-section .section-subheader {
+      width: 100%; } }
+  @media (max-width: 479px) {
     .first-section .section-subheader {
       padding: 50px 0 10px; } }
 
@@ -676,11 +705,16 @@ header .navbar .container {
   text-align: center; }
   @media (max-width: 1023px) {
     .second-section .second-section-img-container .second-section-img {
-      margin-top: 50px; } }
+      margin-top: 50px;
+      width: 100%; } }
+  @media (min-width: 1023px) and (max-width: 1085px) {
+    .second-section .second-section-img-container .second-section-img {
+      width: 100%; } }
   @media (max-width: 767px) {
     .second-section .second-section-img-container .second-section-img {
-      margin-top: 10px; } }
-  @media (max-width: 767px) {
+      margin-top: 10px;
+      width: 55%; } }
+  @media (max-width: 479px) {
     .second-section .second-section-img-container .second-section-img {
       width: 75%; } }
 
@@ -688,13 +722,22 @@ header .navbar .container {
   padding-left: 0;
   padding-right: 0;
   width: 80%; }
+  @media (max-width: 768px) {
+    .second-section .section-text {
+      width: 90%; } }
   @media (max-width: 767px) {
     .second-section .section-text {
       width: 100%; } }
 
 .third-section .section-subheader {
   width: 80%; }
+  @media (max-width: 991px) {
+    .third-section .section-subheader {
+      width: 90%; } }
   @media (max-width: 767px) {
+    .third-section .section-subheader {
+      width: 100%; } }
+  @media (max-width: 768px) {
     .third-section .section-subheader {
       width: 100%; } }
 
@@ -737,8 +780,6 @@ header .navbar .container {
 
 .our-projects {
   margin-bottom: 50px; }
-  .our-projects .our-projects-section-dots {
-    display: none; }
   @media (max-width: 479px) {
     .our-projects .our-projects-subheader {
       padding: 20px 0; } }
@@ -769,6 +810,9 @@ header .navbar .container {
   @media (max-width: 767px) {
     .who-we-are .who-we-are-subheader {
       padding: 0 20px; } }
+  @media (max-width: 768px) {
+    .who-we-are .who-we-are-subheader {
+      padding-right: 20px; } }
   @media (max-width: 479px) {
     .who-we-are .who-we-are-subheader {
       padding: 0; } }

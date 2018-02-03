@@ -69,11 +69,14 @@
 
   .hello-section-dots {
     position: absolute;
-    right: 400px;
+    right: 90px;
     top: 80px;
 
     @media (max-width: $max-width-st) {
-      right: 135px;
+      right: 55px;
+    }
+    @media (max-width: $max-width-sm) {
+      right: 70px;
     }
     @media (max-width: $max-width-xs) {
         display: none;
