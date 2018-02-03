@@ -5,9 +5,9 @@ $min-width-st : 1024px;
 $min-width-lg : 1200px;
 $min-width-xlg : 1800px;
 
-$max-width-xxs : $min-width-xs - 1;
-$max-width-xs : $min-width-sm - 1;
-$max-width-sm : $min-width-md - 1;
-$max-width-md : $min-width-st - 1;
-$max-width-st : $min-width-lg - 1;
-$max-width-xlg : $min-width-xlg -1;
+$max-width-xxs : $min-width-xs - 1px;
+$max-width-xs : $min-width-sm - 1px;
+$max-width-sm : $min-width-md - 1px;
+$max-width-md : $min-width-st - 1px;
+$max-width-st : $min-width-lg - 1px;
+$max-width-xlg : $min-width-xlg -1px;
