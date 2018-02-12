@@ -1,0 +1,80 @@
+.navbar-default {
+  background: $white;
+  border: none;
+
+  @media (max-width: $max-width-xs) {
+    .navbar-brand {
+      display: block;
+      float: none;
+      img {
+        margin: 0 auto;
+      }
+    }
+    .navbar-nav {
+      text-align: center;
+      margin-top: 45px;
+      @media (max-width: $max-width-xs) {
+          margin-top: 53px;
+      }
+      @media (max-width: 320px) {
+          font-size: 13px;
+      }
+    }
+  }
+}
+
+.nav {
+  margin: -32px -22px -25px 0;
+  @media (max-width: $max-width-xs) {
+    margin: 0;
+  }
+
+  .nav-item {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-right: 45px;
+    @media (max-width: $max-width-xs) {
+      display: inline-block;
+      padding: 0;
+    }
+
+    .nav-item-link {
+      color: $main-blue;
+      letter-spacing: 0.1em;
+    }
+  }
+}
+
+// NAV COLOR HOVER ANIMATION
+.navbar-default .navbar-nav>li>a{
+  &:hover,
+  &:focus {
+    color: $second-blue;
+  }
+}
+
+.change-color:hover {
+  animation-name: textcolor;
+  animation-duration: 1s;
+}
+
+@keyframes textcolor {
+  0% {
+    color: $hover-violet;
+  }
+  50% {
+    color: $hover-violet;
+  }
+  100% {
+    color: $second-blue;
+  }
+}
+
+// NAV COLOR HOVER ANIMATION -- END
+
+//@media (max-width: $max-width-xs) {
+//  text-align: center;
+//  margin-bottom: 10px;
+//}
+
+

@@ -1,0 +1,108 @@
+@font-face {
+  font-family: 'oswaldlight';
+  src: url('../fonts/Oswald/oswald-light-webfont.eot');
+  src: url('../fonts/Oswald/oswald-light-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Oswald/oswald-light-webfont.woff2') format('woff2'),
+  url('../fonts/Oswald/oswald-light-webfont.woff') format('woff'),
+  url('../fonts/Oswald/oswald-light-webfont.ttf') format('truetype'),
+  url('../fonts/Oswald/oswald-light-webfont.svg#oswaldlight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'oswaldmedium';
+  src: url('../fonts/Oswald/oswald-medium-webfont.eot');
+  src: url('../fonts/Oswald/oswald-medium-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Oswald/oswald-medium-webfont.woff2') format('woff2'),
+  url('../fonts/Oswald/oswald-medium-webfont.woff') format('woff'),
+  url('../fonts/Oswald/oswald-medium-webfont.ttf') format('truetype'),
+  url('../fonts/Oswald/oswald-medium-webfont.svg#oswaldmedium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'oswaldregular';
+  src: url('../fonts/Oswald/oswald-regular-webfont.eot');
+  src: url('../fonts/Oswald/oswald-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Oswald/oswald-regular-webfont.woff2') format('woff2'),
+  url('../fonts/Oswald/oswald-regular-webfont.woff') format('woff'),
+  url('../fonts/Oswald/oswald-regular-webfont.ttf') format('truetype'),
+  url('../fonts/Oswald/oswald-regular-webfont.svg#oswaldregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'robotolight';
+  src: url('../fonts/Roboto/roboto-light-webfont.eot');
+  src: url('../fonts/Roboto/roboto-light-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Roboto/roboto-light-webfont.woff2') format('woff2'),
+  url('../fonts/Roboto/roboto-light-webfont.woff') format('woff'),
+  url('../fonts/Roboto/roboto-light-webfont.ttf') format('truetype'),
+  url('../fonts/Roboto/roboto-light-webfont.svg#robotolight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotomedium';
+  src: url('../fonts/Roboto/roboto-medium-webfont.eot');
+  src: url('../fonts/Roboto/roboto-medium-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Roboto/roboto-medium-webfont.woff2') format('woff2'),
+  url('../fonts/Roboto/roboto-medium-webfont.woff') format('woff'),
+  url('../fonts/Roboto/roboto-medium-webfont.ttf') format('truetype'),
+  url('../fonts/Roboto/roboto-medium-webfont.svg#robotomedium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'robotoregular';
+  src: url('../fonts/Roboto/roboto-regular-webfont.eot');
+  src: url('../fonts/Roboto/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Roboto/roboto-regular-webfont.woff2') format('woff2'),
+  url('../fonts/Roboto/roboto-regular-webfont.woff') format('woff'),
+  url('../fonts/Roboto/roboto-regular-webfont.ttf') format('truetype'),
+  url('../fonts/Roboto/roboto-regular-webfont.svg#robotoregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$Roboto: 'robotolight', sans-serif;
+$Oswald: 'oswaldregular', sans-serif;
+
+$btn-font-size: 20px;
+$h2-font-size: 67px;
+$main-header-font-size: 27px;
+$main-subheader-font-size: 36px;
+$section-header-font-size: 67px;
+
+.main-header,
+.section-header,
+.who-we-are-list-title,
+.our-strengths {
+  font-family: $Oswald;
+}
+
+h2 {
+  font-size: $h2-font-size;
+}
+
+p {
+  font-size: 17px;
+
+  @media (max-width: $max-width-xs) {
+    font-size: 16px;
+  }
+}
+
+.is-bold-roboto {
+  font-family: 'robotomedium', sans-serif;
+}
+
+.is-bold-oswald {
+  font-family: 'oswaldmedium', sans-serif;
+}
