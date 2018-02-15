@@ -497,6 +497,9 @@ p {
     @media (max-width: 320px) {
       .who-we-are .our-images .image-box .image-box-img {
         height: 180px; } }
+  .who-we-are .our-images .our-images-name {
+    margin-top: 30px;
+    text-transform: uppercase; }
 
 @media (max-width: 767px) {
   .who-we-are .who-we-are-list-container {
