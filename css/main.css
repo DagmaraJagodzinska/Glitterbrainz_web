@@ -96,60 +96,75 @@ p {
     color: #fff; }
 
 .stripe, .stripe-right {
-  width: 50vw; }
+  position: relative;
+  height: 155px; }
+
+.stripe, .stripe-right {
+  width: 50%; }
   .stripe .bar, .stripe-right .bar {
-    fill: lightgrey;
+    background-color: lightgrey;
     width: 0;
-    height: 5px; }
+    height: 5px;
+    position: absolute;
+    left: 0; }
     .stripe .bar:nth-child(1), .stripe-right .bar:nth-child(1) {
+      top: 0;
       transition: width 1s ease-out 0.2s; }
       @media (max-width: 767px) {
         .stripe .bar:nth-child(1), .stripe-right .bar:nth-child(1) {
           animation-duration: 0.25s;
           transition: width 0.5s ease-out 0.2s; } }
     .stripe .bar:nth-child(2), .stripe-right .bar:nth-child(2) {
+      top: 13px;
       transition: width 1s ease-out 0.4s; }
       @media (max-width: 767px) {
         .stripe .bar:nth-child(2), .stripe-right .bar:nth-child(2) {
           animation-duration: 0.25s;
           transition: width 0.5s ease-out 0.4s; } }
     .stripe .bar:nth-child(3), .stripe-right .bar:nth-child(3) {
+      top: 26px;
       transition: width 1s ease-out 0s; }
       @media (max-width: 767px) {
         .stripe .bar:nth-child(3), .stripe-right .bar:nth-child(3) {
           animation-duration: 0.25s;
           transition: width 0.5s ease-out 0s; } }
     .stripe .bar:nth-child(4), .stripe-right .bar:nth-child(4) {
+      top: 39px;
       transition: width 1s ease-out 0.8s; }
       @media (max-width: 767px) {
         .stripe .bar:nth-child(4), .stripe-right .bar:nth-child(4) {
           animation-duration: 0.25s;
           transition: width 0.5s ease-out 0.8s; } }
     .stripe .bar:nth-child(5), .stripe-right .bar:nth-child(5) {
+      top: 52px;
       transition: width 1s ease-out 0.16s; }
       @media (max-width: 767px) {
         .stripe .bar:nth-child(5), .stripe-right .bar:nth-child(5) {
           animation-duration: 0.25s;
           transition: width 0.5s ease-out 0.16s; } }
     .stripe .bar:nth-child(6), .stripe-right .bar:nth-child(6) {
+      top: 65px;
       transition: width 1s ease-out 0.6s; }
       @media (max-width: 767px) {
         .stripe .bar:nth-child(6), .stripe-right .bar:nth-child(6) {
           animation-duration: 0.25s;
           transition: width 0.5s ease-out 0.6s; } }
     .stripe .bar:nth-child(7), .stripe-right .bar:nth-child(7) {
+      top: 78px;
       transition: width 1s ease-out 0.44s; }
       @media (max-width: 767px) {
         .stripe .bar:nth-child(7), .stripe-right .bar:nth-child(7) {
           animation-duration: 0.25s;
           transition: width 0.5s ease-out 0.44s; } }
     .stripe .bar:nth-child(8), .stripe-right .bar:nth-child(8) {
+      top: 91px;
       transition: width 1s ease-out 0.1s; }
       @media (max-width: 767px) {
         .stripe .bar:nth-child(8), .stripe-right .bar:nth-child(8) {
           animation-duration: 0.25s;
           transition: width 0.5s ease-out 0.1s; } }
     .stripe .bar:nth-child(9), .stripe-right .bar:nth-child(9) {
+      top: 104px;
       transition: width 1s ease-out 0.6s; }
       @media (max-width: 767px) {
         .stripe .bar:nth-child(9), .stripe-right .bar:nth-child(9) {
@@ -160,7 +175,9 @@ p {
   width: 100%;
   animation-name: stripe-color;
   animation-duration: 1s;
-  fill: #29d4be; }
+  position: absolute;
+  left: 0;
+  background-color: #29d4be; }
   .stripe.visible .bar:nth-child(1), .visible.stripe-right .bar:nth-child(1) {
     animation-delay: 0.2s; }
   .stripe.visible .bar:nth-child(2), .visible.stripe-right .bar:nth-child(2) {
@@ -195,15 +212,15 @@ p {
 
 @keyframes stripe-color {
   0% {
-    fill: #5454ff; }
+    background-color: #5454ff; }
   10% {
-    fill: #5454ff; }
+    background-color: #5454ff; }
   40% {
-    fill: #ab22d8; }
+    background-color: #ab22d8; }
   90% {
-    fill: #29d4be; }
+    background-color: #29d4be; }
   100% {
-    fill: #29d4be; } }
+    background-color: #29d4be; } }
 
 .navbar-default {
   background: #fff;
