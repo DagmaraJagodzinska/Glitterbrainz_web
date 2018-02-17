@@ -15,8 +15,24 @@ $random-starts: (
         rand-7: 2.2,
         rand-8: 0.5,
         rand-9: 3,
-
 );
+
+$order-elements: (
+        rand-1: 0,
+        rand-2: 13px,
+        rand-3: 26px,
+        rand-4: 39px,
+        rand-5: 52px,
+        rand-6: 65px,
+        rand-7: 78px,
+        rand-8: 91px,
+        rand-9: 104px
+);
+
+.stripe {
+  position: relative;
+  height: 155px;
+}
 
 @mixin mobile-animation($chosen-media, $anima-time, $ease-single-time, $delay) {
   @media (max-width: $chosen-media) {
@@ -26,17 +42,20 @@ $random-starts: (
 }
 
 .stripe {
-  width: 50vw;
+  width: 50%;
 
   .bar {
-    fill: $stripe-lightgrey-color;
+    background-color: $stripe-lightgrey-color;
     width: 0;
     height: 5px;
+    position: absolute;
+    left: 0;
 
     @for $i from 1 through 9 {
       &:nth-child(#{$i}) {
+        top: map-get($order-elements, rand-#{$i});
         transition: width $transition-time ease-out $ease-step*(map-get($random-starts, rand-#{$i}));
-        @include mobile-animation ($max-width-xs, $transition-time, $ease-step, map-get($random-starts, rand-#{$i}) );
+        @include mobile-animation ($max-width-xs, $transition-time, $ease-step, map-get($random-starts, rand-#{$i}));
       }
     }
   }
@@ -45,8 +64,11 @@ $random-starts: (
 .stripe {
   &.visible .bar {
     width: 100%;
+
     animation-name: stripe-color;
     animation-duration: $transition-time;
+    position: absolute;
+    left: 0;
 
     @for $j from 1 through 9 {
       &:nth-child(#{$j}) {
@@ -54,7 +76,7 @@ $random-starts: (
       }
     }
 
-    fill: $second-blue;
+    background-color: $second-blue;
   }
 
   @media (max-width: $max-width-xs) {
@@ -78,19 +100,19 @@ $random-starts: (
 
 @keyframes stripe-color {
   0% {
-    fill: $main-blue;
+    background-color: $main-blue;
   }
   10% {
-    fill: $main-blue;
+    background-color: $main-blue;
   }
   40% {
-    fill: $hover-violet;
+    background-color: $hover-violet;
   }
   90% {
-    fill: $second-blue;
+    background-color: $second-blue;
   }
   100% {
-    fill: $second-blue;
+    background-color: $second-blue;
   }
 }
 
