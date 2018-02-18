@@ -26,9 +26,21 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
+    <script src="cookies/cookies.js"></script>
+    <script src="translator/translator.js"></script>
     <script src="equalizer.js"></script>
 </head>
 <body>
+<!--language select-->
+<!--<div style="position: absolute; top: 0px; right: 0px" class="btn-group">-->
+    <!--<button type="button" class="btn btnsm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+        <!--<span id="lang">PL</span><span  class="caret"></span>-->
+    <!--</button>-->
+    <!--<ul class="dropdown-menu">-->
+        <!--<li><a id="first-link" onclick="getTranslation('en')">EN</a></li>-->
+        <!--<li><a id="second-link" onclick="getTranslation('no')">NO</a></li>-->
+    <!--</ul>-->
+<!--</div>-->
 <header class="container">
     <nav class="navbar navbar-default">
         <div class="container">
@@ -40,21 +52,30 @@
                 </div>
             </div>
             <ul class="nav navbar-nav navbar-right">
-                <li class="nav-item"><a class="nav-item-link change-color is-bold-roboto"
+                <li class="nav-item"><a id="blog" class="nav-item-link change-color is-bold-roboto"
                                         href="http://glitterbrainz.com/blog/blog" target="_blank">Blog</a></li>
-                <li class="nav-item"><a class="nav-item-link change-color is-bold-roboto"
+                <li class="nav-item"><a id="oferta" class="nav-item-link change-color is-bold-roboto"
                                         href="http://glitterbrainz.com/blog/oferta/" target="_blank">Oferta</a></li>
-                <li class="nav-item"><a class="nav-item-link change-color is-bold-roboto"
+                <li class="nav-item"><a id="kontakt" class="nav-item-link change-color is-bold-roboto"
                                         href="http://glitterbrainz.com/blog/kontakt/" target="_blank">Kontakt</a></li>
+                <!--language select-->
+                <li class="dropdown nav-item-link change-color is-bold-roboto">
+                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span id="lang">PL</span><span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a id="first-link" onclick="getTranslation('en')">EN</a></li>
+                        <li><a id="second-link" onclick="getTranslation('no')">NO</a></li>
+                    </ul>
+                </li>
             </ul>
+
         </div>
     </nav>
 </header>
 <section class="hello-section">
     <div class="container">
         <div class="hello-text">
-            <h1 class="text-left main-header">Jesteśmy <span class="is-bold-oswald">Glitterbrainz</span></h1>
-            <p class="text-left main-subheader">
+            <h1 id="header" class="text-left main-header">Jesteśmy <span class="is-bold-oswald">Glitterbrainz</span></h1>
+            <p id="subheader" class="text-left main-subheader">
                 Cztery osoby, milion doświadczeń. Nieważne, w którą stronę chcesz pójść, każdą zrobimy Ci świetnie!
             </p>
         </div>
