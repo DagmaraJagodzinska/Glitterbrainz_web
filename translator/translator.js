@@ -12,7 +12,7 @@ var langCodes = {
 
 window.onload = function() {
     var defaultLang = getCookie("defaultLang");
-
+    checkCookie()
     if(defaultLang) {
         getTranslation(defaultLang)
     }

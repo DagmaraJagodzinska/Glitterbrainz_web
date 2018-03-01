@@ -874,6 +874,19 @@ header .navbar .container {
   .stripes-second {
     margin-bottom: 10px; } }
 
+.cookies-container {
+  display: none;
+  position: absolute;
+  top: 0;
+  opacity: 0.5;
+  background-color: #373D3F; }
+
+.no-js-cookies-container {
+  position: absolute;
+  top: 0;
+  opacity: 0.5;
+  background-color: #373D3F; }
+
 body {
   margin: 0;
   background-color: #fff;
