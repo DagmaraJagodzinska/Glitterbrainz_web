@@ -874,6 +874,21 @@ header .navbar .container {
   .stripes-second {
     margin-bottom: 10px; } }
 
+.cookies-container {
+  display: none;
+  position: absolute;
+  top: 0;
+  opacity: 0.5;
+  background-color: #373D3F; }
+
+.no-js-cookies-container .no-js-cookies-input {
+  display: none; }
+  .no-js-cookies-container .no-js-cookies-input:checked ~ .no-js-cookies-info {
+    display: none; }
+
+.no-js-cookies-container .no-js-cookies-info {
+  display: block; }
+
 body {
   margin: 0;
   background-color: #fff;
