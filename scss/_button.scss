@@ -4,7 +4,6 @@
   border-radius: 0;
   padding: 10px 44px;
   font-size: $btn-font-size;
-  text-transform: uppercase;
   font-weight: 300;
   color: $white;
   @media (max-width: $max-width-xs) {
@@ -15,6 +14,7 @@
   &:focus {
     background-color: $second-blue-hover;
     color: $white;
+    outline: none;
   }
   &:active {
     background-color: $second-blue-hover;

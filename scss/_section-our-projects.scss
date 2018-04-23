@@ -1,8 +1,6 @@
 .our-projects {
-  background-color: $dark-grey;
   padding: 60px;
   position: relative;
-  margin-bottom: 0;
   @media (max-width: $max-width-xs) {
     padding: 35px 15px 15px;
   }
@@ -41,7 +39,7 @@
     &:after {
       display: block;
       content: "";
-      border-top: 5px solid $white;
+      // border-top: 5px solid $white;
       width: 285px;
       position: relative;
       bottom: -8px;
@@ -55,8 +53,9 @@
     }
   }
   .our-projects-subheader {
-    padding: 40px;
-    width: 500px;
+    text-align: center;
+    padding: 30px;
+    width: 650px;
     margin: 0 auto;
     @media (max-width: $max-width-xs) {
       width: 100%;

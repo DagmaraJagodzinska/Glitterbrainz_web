@@ -1,6 +1,8 @@
 .who-we-are {
+  margin-top: 100px;
   @media (max-width: $max-width-xs) {
     text-align: center;
+    margin-top: 50px;
   }
 
   .section-header {
